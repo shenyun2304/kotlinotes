@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>入門知識 · Kotlin 學習筆記</title>
+        <title>入門 · Kotlin 學習筆記</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="OPERATOR.html" />
+    
     
     <link rel="prev" href="./" />
     
@@ -92,7 +94,7 @@
                 <a href="./">
             
                     
-                    預備
+                    前言
             
                 </a>
             
@@ -105,7 +107,33 @@
                 <a href="BASIC.html">
             
                     
-                    入門知識
+                    入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="OPERATOR.html">
+            
+                <a href="OPERATOR.html">
+            
+                    
+                    操作子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CONTROL_FLOW.html">
+            
+                <a href="CONTROL_FLOW.html">
+            
+                    
+                    流程控制
             
                 </a>
             
@@ -143,7 +171,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >入門知識</a>
+        <a href="." >入門</a>
     </h1>
 </div>
 
@@ -284,6 +312,27 @@ println(nullString?.length) <span class="hljs-comment">// &lt;-- &#x4E0D;&#x6703
 <p>&#x8A72;&#x8B8A;&#x6578;&#x5C31;&#x70BA;&#x7A7A;</p>
 <pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">var</span> number</span>:<span class="hljs-keyword">Int</span>? = <span class="hljs-string">&quot;foo&quot;</span> <span class="hljs-keyword">as</span>? <span class="hljs-keyword">Int</span> <span class="hljs-comment">// number &#x662F;&#x7A7A;&#xFF0C;&#x4F46;&#x4E0D;&#x6703;&#x5674;&#x932F;</span>
 </code></pre>
+<h3 id="&#x5224;&#x5B9A;&#x5F8C;&#x81EA;&#x52D5;&#x8F49;&#x63DB;">&#x5224;&#x5B9A;&#x5F8C;&#x81EA;&#x52D5;&#x8F49;&#x63DB;</h3>
+<p>&#x4F7F;&#x7528; <code>is</code> &#x5224;&#x5B9A;&#x5F8C;&#x7684;&#x5340;&#x584A;&#x5167;&#x8A72;&#x8B8A;&#x6578;&#x6703;&#x81EA;&#x52D5;&#x8F49;&#x63DB;&#x6210;&#x5224;&#x5B9A;&#x7684;&#x578B;&#x5225;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">var</span> foo</span>:Any = <span class="hljs-string">&quot;I am a string&quot;</span>
+
+<span class="hljs-keyword">if</span> (foo <span class="hljs-keyword">is</span> String) {
+  println(foo.toUpperCase()) <span class="hljs-comment">// &lt;-- &#x5340;&#x584A;&#x5167; foo &#x5C31;&#x7576;&#x4F5C;&#x662F; String &#x578B;&#x5225;&#xFF0C;&#x53EF;&#x4EE5;&#x547C;&#x53EB;&#x8A72;&#x578B;&#x5225;&#x7684;&#x65B9;&#x6CD5;</span>
+}
+</code></pre>
+<hr>
+<h1 id="&#x8868;&#x9054;&#x5F0F;">&#x8868;&#x9054;&#x5F0F;</h1>
+<p>&#x5728; kotlin &#x4E2D;&#x53EA;&#x8981;&#x770B;&#x5230;&#x67D0;&#x4E9B;<strong>&#x64CD;&#x4F5C;&#x5B50;&#x53EF;&#x4EE5;&#x505A;&#x8868;&#x9054;&#x5F0F;&#x4F7F;&#x7528;</strong></p>
+<p>&#x8868;&#x793A;&#x8A72;&#x64CD;&#x4F5C;&#x5B50;&#x53EF;&#x4EE5;&#x5BEB;&#x5728;&#x8CE6;&#x503C;&#x64CD;&#x4F5C;&#x7B26; <code>=</code> &#x7684;&#x53F3;&#x65B9;</p>
+<p>&#x6700;&#x5F8C;&#x6703;&#x56DE;&#x50B3;&#x8A72;&#x8868;&#x9054;&#x5F0F;&#x7684;&#x6700;&#x5F8C;&#x4E00;&#x884C;&#x57F7;&#x884C;&#x7D50;&#x679C;&#xFF0C;&#x4E14;&#x4E0D;&#x9700;&#x8981; <code>return</code> &#x95DC;&#x9375;&#x5B57;</p>
+<p>&#x4F8B;&#x5982; : </p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> s</span> = <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) <span class="hljs-string">&quot;Hello&quot;</span> <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;Kotlin&quot;</span> <span class="hljs-comment">// s = &quot;Hello&quot;</span>
+<span class="hljs-variable"><span class="hljs-keyword">val</span> s2</span> = <span class="hljs-keyword">if</span>(<span class="hljs-literal">false</span>) {
+  <span class="hljs-string">&quot;Hello&quot;</span>
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-string">&quot;Kotlin&quot;</span>
+} <span class="hljs-comment">// s2 = &quot;Kotlin&quot;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -311,10 +360,14 @@ println(nullString?.length) <span class="hljs-comment">// &lt;-- &#x4E0D;&#x6703
 
             
                 
-                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 預備">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 前言">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="OPERATOR.html" class="navigation navigation-next " aria-label="Next page: 操作子">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -323,7 +376,7 @@ println(nullString?.length) <span class="hljs-comment">// &lt;-- &#x4E0D;&#x6703
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"入門知識","level":"1.2","depth":1,"previous":{"title":"預備","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Matthew","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin 學習筆記","gitbook":"3.2.3","description":"CSO Kotlin 研究報告"},"file":{"path":"BASIC.md","mtime":"2021-11-05T07:41:51.043Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-05T06:37:37.919Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"入門","level":"1.2","depth":1,"next":{"title":"操作子","level":"1.3","depth":1,"path":"OPERATOR.md","ref":"OPERATOR.md","articles":[]},"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Matthew","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin 學習筆記","gitbook":"3.2.3","description":"CSO Kotlin 研究報告"},"file":{"path":"BASIC.md","mtime":"2021-11-05T08:08:58.280Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-05T08:13:42.065Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
