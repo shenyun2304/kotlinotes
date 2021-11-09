@@ -11,3 +11,5 @@
 * [繼承、抽象、介面](IMPLEMENT.md)
 * [套件與存取修飾子](PACKAGE.md)
 * [程式示範](DEMO.md)
+* [泛型](GENERIC.md)
+* [擴展與代理](EXTENSION_DELEGATE.md)

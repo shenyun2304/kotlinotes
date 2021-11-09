@@ -1,7 +1,6 @@
 # 目標
 
-- 定時排程每 1 秒產生一筆隨機整數，並放到 cache 中
-- 前端通過 server push 收集資料即時畫出直方圖
+... 規劃中
 
 
 # Let's go
@@ -14,11 +13,7 @@
 3. 引入必要依賴
 	- kotlin-stdlib
 
-4. rest web api
-	- echo
-5. 建立 scheduler 定時產生資料
-6. 建立 web api 取得資料
-7. 前端呈現頁面
+... 規劃中
 
 
 ---
