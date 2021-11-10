@@ -13,3 +13,6 @@
 * [程式示範](DEMO.md)
 * [泛型](GENERIC.md)
 * [擴展與代理](EXTENSION_DELEGATE.md)
+* [深入方法](DIVE_INTO_FUNCTION.md)
+* [例外處理](EXCEPTION.md)
+* [DSL](DSL.md)
