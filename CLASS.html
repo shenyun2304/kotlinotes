@@ -1,0 +1,714 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>深入類別 · Kotlin 學習筆記</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Matthew">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="IMPLEMENT.html" />
+    
+    
+    <link rel="prev" href="TYPE_AND_OBJECT.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="BASIC.html">
+            
+                <a href="BASIC.html">
+            
+                    
+                    入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="OPERATOR.html">
+            
+                <a href="OPERATOR.html">
+            
+                    
+                    操作子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CONTROL_FLOW.html">
+            
+                <a href="CONTROL_FLOW.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="COLLECTION.html">
+            
+                <a href="COLLECTION.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="METHOD.html">
+            
+                <a href="METHOD.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="TYPE_AND_OBJECT.html">
+            
+                <a href="TYPE_AND_OBJECT.html">
+            
+                    
+                    物件與類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="CLASS.html">
+            
+                <a href="CLASS.html">
+            
+                    
+                    深入類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="IMPLEMENT.html">
+            
+                <a href="IMPLEMENT.html">
+            
+                    
+                    繼承、抽象、介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="PACKAGE.html">
+            
+                <a href="PACKAGE.html">
+            
+                    
+                    套件與存取修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="DEMO.html">
+            
+                <a href="DEMO.html">
+            
+                    
+                    程式示範
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="GENERIC.html">
+            
+                <a href="GENERIC.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="EXTENSION_DELEGATE.html">
+            
+                <a href="EXTENSION_DELEGATE.html">
+            
+                    
+                    擴展與代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="DIVE_INTO_FUNCTION.html">
+            
+                <a href="DIVE_INTO_FUNCTION.html">
+            
+                    
+                    深入方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="EXCEPTION.html">
+            
+                <a href="EXCEPTION.html">
+            
+                    
+                    例外處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="DSL.html">
+            
+                <a href="DSL.html">
+            
+                    
+                    DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >深入類別</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5167;&#x5D4C;&#x985E;&#x5225;-nested-class">&#x5167;&#x5D4C;&#x985E;&#x5225; (Nested Class)</h1>
+<p>&#x5B9A;&#x7FA9;&#x5728;&#x985E;&#x5225;&#x5167;&#x90E8;&#x7684;&#x985E;&#x5225;</p>
+<p>&#x5B8C;&#x6574;&#x7684;&#x985E;&#x5225;&#x540D;&#x7A31;&#x70BA; &quot;&#x5916;&#x90E8;&#x985E;&#x5225;.&#x5167;&#x5D4C;&#x985E;&#x5225;&quot;</p>
+<p>&#x5167;&#x5D4C;&#x985E;&#x5225;&#x662F;&#x975C;&#x614B;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x53EA;&#x662F;&#x908F;&#x8F2F;&#x4E0A;&#x548C;&#x5916;&#x90E8;&#x985E;&#x5225;&#x5B58;&#x5728;&#x4E00;&#x5B9A;&#x95DC;&#x806F;&#xFF0C;&#x4F46;&#x5BE6;&#x969B;&#x4E0A;&#x5167;&#x5D4C;&#x985E;&#x5225;&#x548C;&#x5916;&#x90E8;&#x985E;&#x5225;&#x662F;&#x7368;&#x7ACB;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x6240;&#x4EE5; <strong>&#x5167;&#x5D4C;&#x985E;&#x5225;&#x7121;&#x6CD5;&#x8A2A;&#x554F;&#x5916;&#x90E8;&#x985E;&#x5225;&#x7684;&#x6210;&#x54E1;</strong></p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Outer</span> </span>{
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> outerProperty</span>:String = <span class="hljs-string">&quot;&#x5916;&#x90E8;&#x985E;&#x5C6C;&#x6027;&quot;</span>
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Nested</span> </span>{
+        <span class="hljs-variable"><span class="hljs-keyword">val</span> nestedProperty</span>:String = <span class="hljs-string">&quot;&#x5167;&#x5D4C;&#x985E;&#x5C6C;&#x6027;&quot;</span>
+
+        <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">printProperty</span><span class="hljs-params">()</span> {</span>
+            <span class="hljs-comment">// &#x7121;&#x6CD5;&#x8A2A;&#x554F; outerProperty</span>
+            println(nestedProperty)
+        }
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> nested</span> = Outer.Nested()
+    nested.printProperty() <span class="hljs-comment">// &quot;&#x5167;&#x5D4C;&#x985E;&#x5C6C;&#x6027;&quot;</span>
+}
+</code></pre>
+<hr>
+<h1 id="&#x5167;&#x90E8;&#x985E;&#x5225;-inner-class">&#x5167;&#x90E8;&#x985E;&#x5225; (Inner Class)</h1>
+<p>&#x5C07;&#x985E;&#x5225;&#x505A;&#x70BA;&#x53E6;&#x4E00;&#x500B;&#x985E;&#x5225;&#x7684;&#x6210;&#x54E1;</p>
+<p>&#x4FEE;&#x98FE;&#x5B50; : <code>inner</code></p>
+<p><strong>&#x5167;&#x90E8;&#x985E;&#x5225;&#x662F;&#x5916;&#x90E8;&#x985E;&#x5225;&#x7684;&#x4E00;&#x500B;&#x6210;&#x54E1;</strong>&#xFF0C;&#x5167;&#x90E8;&#x985E;&#x5225;&#x7121;&#x6CD5;&#x7368;&#x7ACB;&#x5B58;&#x5728;&#xFF0C;&#x9700;&#x8981;&#x900F;&#x904E;&#x5916;&#x90E8;&#x985E;&#x5225;&#x7684;&#x7269;&#x4EF6;&#x624D;&#x80FD;&#x5275;&#x5EFA;
+&#x4E5F;&#x56E0;&#x70BA;&#x9019;&#x6A23;&#xFF0C;&#x6240;&#x4EE5; <strong>&#x5167;&#x90E8;&#x985E;&#x5225;&#x53EF;&#x4EE5;&#x8A2A;&#x554F;&#x5916;&#x90E8;&#x985E;&#x5225;&#x7684;&#x5C6C;&#x6027;</strong></p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Outer</span></span>(<span class="hljs-keyword">private</span> <span class="hljs-variable"><span class="hljs-keyword">val</span> name</span>:String = <span class="hljs-string">&quot;Outer&quot;</span>) {
+    inner <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inner</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getOuterName</span><span class="hljs-params">()</span> = name</span>
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> outer</span> = Outer()
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> inner</span> = outer.Inner() <span class="hljs-comment">// &#x9700;&#x8981;&#x900F;&#x904E;&#x5916;&#x90E8;&#x985E;&#x5225;&#x7269;&#x4EF6;&#x624D;&#x80FD;&#x5275;&#x5EFA;</span>
+    println(inner.getOuterName()) <span class="hljs-comment">// &quot;Outer&quot;</span>
+}
+</code></pre>
+<hr>
+<h1 id="&#x55AE;&#x4E00;&#x5BE6;&#x4F8B;-singleton">&#x55AE;&#x4E00;&#x5BE6;&#x4F8B; (Singleton)</h1>
+<p>kotlin &#x4E2D;&#x53EB;&#x505A; &quot;Object Declaration&quot;</p>
+<p>&#x95DC;&#x9375;&#x5B57; : <code>object</code></p>
+<p>&#x9019;&#x7A2E;&#x985E;&#x578B;&#x7684;&#x985E;&#x5225;&#x53EA;&#x6703;&#x6709;&#x55AE;&#x4E00;&#x5BE6;&#x4F8B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8A2D;&#x8A08;&#x6A21;&#x5F0F;&#x4E2D;&#x7684; Singleton Pattern
+&#x6B64;&#x985E;&#x5225;&#x5BE6;&#x4F8B;&#x7684;&#x5275;&#x5EFA;&#x904E;&#x7A0B;&#x662F; thread-safe &#x7684;
+&#x56E0;&#x70BA;&#x6B64;&#x985E;&#x5225;&#x5BE6;&#x4F8B;&#x53EA;&#x6703;&#x6709;&#x4E00;&#x500B;&#xFF0C;&#x4F7F;&#x7528;&#x6642; <strong>&#x50CF;</strong> &#x975C;&#x614B;&#x985E;&#x5225;&#x547C;&#x53EB;&#x5C31;&#x597D;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5275;&#x5EFA;&#x985E;&#x5225;&#x5BE6;&#x4F8B;</p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">object</span> Singleton {
+    <span class="hljs-keyword">private</span> <span class="hljs-variable"><span class="hljs-keyword">var</span> num</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">sequence</span><span class="hljs-params">()</span>:<span class="hljs-keyword">Int</span> {</span>
+        num += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">return</span> num
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    println(Singleton.sequence()) <span class="hljs-comment">// 1</span>
+    println(Singleton.sequence()) <span class="hljs-comment">// 2</span>
+    println(Singleton.sequence()) <span class="hljs-comment">// 3</span>
+}
+</code></pre>
+<blockquote>
+<p>&#x9019;&#x7A2E;&#x7528;&#x6CD5;&#x55AE;&#x7D14;&#x662F; &quot;&#x50CF;&quot; &#x975C;&#x614B;&#x65B9;&#x6CD5;&#x547C;&#x53EB;&#x800C;&#x5DF2;&#xFF0C;&#x5BE6;&#x969B;&#x4E0A;&#x5DEE;&#x7570;&#x5F88;&#x5927;&#xFF0C;Kotlin &#x53EA;&#x662F;&#x96B1;&#x85CF; Singleton Pattern &#x7684;&#x57F7;&#x884C;&#x904E;&#x7A0B;&#x4E26;&#x7C21;&#x5316;&#x547C;&#x53EB;&#x800C;&#x5DF2;
+&#x5BE6;&#x969B;&#x4E0A;&#x5728; Kotlin &#x8A9E;&#x6CD5;&#x4E2D;&#xFF0C;<strong>&#x6C92;&#x6709;&#x975C;&#x614B;&#x6210;&#x54E1;&#x9019;&#x7A2E;&#x6771;&#x897F;</strong></p>
+</blockquote>
+<hr>
+<h1 id="&#x4F34;&#x751F;&#x5BE6;&#x4F8B;-companion">&#x4F34;&#x751F;&#x5BE6;&#x4F8B; (Companion)</h1>
+<p> &#x5728;&#x985E;&#x5225;&#x4E2D;&#x7684; <strong>&#x55AE;&#x4E00;&#x5BE6;&#x4F8B;</strong> &#x6210;&#x54E1;
+ <strong>&#x4E00;&#x500B;&#x985E;&#x5225;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x500B;&#x4F34;&#x751F;&#x5BE6;&#x4F8B;</strong></p>
+<p> &#x4FEE;&#x98FE;&#x5B50; : <code>companion</code></p>
+<p> &#x539F;&#x7406;&#x540C; <strong>&#x55AE;&#x4E00;&#x5BE6;&#x4F8B;</strong> &#x985E;&#x5225;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x52A0;&#x4E0A;&#x4E86; <code>companion</code> &#x4FEE;&#x98FE;&#x5B50;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x50CF;&#x547C;&#x53EB;&#x985E;&#x5225;&#x975C;&#x614B;&#x65B9;&#x6CD5;&#x4E00;&#x6A23;&#x7684;&#x4F7F;&#x7528;</p>
+<blockquote>
+<p>&#x518D;&#x6B21;&#x6CE8;&#x610F;&#xFF0C;Kotlin &#x4E2D;&#x6C92;&#x6709;&#x975C;&#x614B;&#x65B9;&#x6CD5;&#xFF0C;&#x6C92;&#x6709;&#x975C;&#x614B;&#x65B9;&#x6CD5;&#xFF0C;&#x6C92;&#x6709;&#x975C;&#x614B;&#x65B9;&#x6CD5;
+&#x9019;&#x88E1;&#x8AAA;&#x7684;&#x53EA;&#x662F; <strong>&#x4F7F;&#x7528;&#x4E0A;&#x7684;&#x985E;&#x4F3C;</strong></p>
+</blockquote>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AlertDialog</span></span>(<span class="hljs-variable"><span class="hljs-keyword">var</span> title</span>:String, <span class="hljs-variable"><span class="hljs-keyword">var</span> message</span>:String) {
+    <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> LikeStatic {
+        <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">method</span><span class="hljs-params">()</span> {}</span>
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    AlertDialog.LikeStatic.method() <span class="hljs-comment">// &#x901A;&#x904E;&#x4F34;&#x751F;&#x5BE6;&#x4F8B;&#x547C;&#x53EB;&#x65B9;&#x6CD5;</span>
+    AlertDialog.method() <span class="hljs-comment">// &#x7701;&#x7565;&#x4F34;&#x751F;&#x5BE6;&#x4F8B;&#x540D;&#x7A31;&#xFF0C;&#x5916;&#x90E8;&#x985E;&#x5225;&#x76F4;&#x63A5;&#x547C;&#x53EB;&#x4F34;&#x751F;&#x5BE6;&#x4F8B;&#x7684;&#x65B9;&#x6CD5;</span>
+}
+</code></pre>
+<p>companion object &#x4E0D;&#x4E00;&#x5B9A;&#x9700;&#x8981;&#x7D66;&#x540D;&#x5B57;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x5C31;&#x50CF; <code>static</code> &#x4E00;&#x6A23;</p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AlertDialog</span></span>(<span class="hljs-variable"><span class="hljs-keyword">var</span> title</span>:String, <span class="hljs-variable"><span class="hljs-keyword">var</span> message</span>:String) {
+    <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
+        <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">method</span><span class="hljs-params">()</span> {}</span>
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    AlertDialog.method()
+}
+</code></pre>
+<hr>
+<h1 id="&#x7269;&#x4EF6;&#x8868;&#x9054;&#x5F0F;-object-declaration">&#x7269;&#x4EF6;&#x8868;&#x9054;&#x5F0F; (Object Declaration)</h1>
+<p>&#x985E;&#x4F3C;&#x5275;&#x5EFA;&#x533F;&#x540D;&#x985E;&#x5225;&#x7269;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;</p>
+<ol>
+<li>&#x4F7F;&#x7528; <code>object</code> &#x95DC;&#x9375;&#x5B57;</li>
+</ol>
+<p><code>object</code> &#x95DC;&#x9375;&#x5B57;&#x662F;&#x5275;&#x5EFA;&#x55AE;&#x4E00;&#x5BE6;&#x4F8B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x80FD;&#x7528;&#x4F86;&#x5275;&#x5EFA;&#x533F;&#x540D;&#x985E;&#x5225;&#x7684;&#x7269;&#x4EF6;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> obj</span> = <span class="hljs-keyword">object</span> {
+        <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">hello</span><span class="hljs-params">()</span> = &quot;Hello&quot;</span>
+        <span class="hljs-variable"><span class="hljs-keyword">var</span> property</span> = <span class="hljs-string">&quot;Oops&quot;</span>
+    }
+    println(<span class="hljs-string">&quot;hello:${obj.hello()}, property:${obj.property}&quot;</span>) 
+    <span class="hljs-comment">// &quot;hello:hello, property:Oops&quot;</span>
+}
+</code></pre>
+<ol>
+<li>&#x7E7C;&#x627F;&#x6216;&#x5BE6;&#x73FE;</li>
+</ol>
+<pre><code class="lang-kotlin">interface Valuable {
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getPrice</span><span class="hljs-params">()</span>:<span class="hljs-keyword">Int</span></span>
+}
+abstract <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
+    abstract <span class="hljs-variable"><span class="hljs-keyword">var</span> group</span>:String
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> obj</span> = <span class="hljs-keyword">object</span> : Item(), Valuable {  
+         <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getPrice</span><span class="hljs-params">()</span>: <span class="hljs-keyword">Int</span> = 0  </span>
+         <span class="hljs-keyword">override</span> <span class="hljs-variable"><span class="hljs-keyword">var</span> group</span>: String = <span class="hljs-string">&quot;SomeGroup&quot;</span>  
+    }
+}
+</code></pre>
+<p>&#x533F;&#x540D;&#x7269;&#x4EF6;&#x5B58;&#x53D6;&#x7BC4;&#x570D;&#x9650;&#x5236;&#x5728; <strong>&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;(<code>{}</code> &#x4E4B;&#x4E2D;)</strong> &#x6216; <strong>&#x7269;&#x4EF6;&#x79C1;&#x6709;&#x57DF;</strong> &#x4E4B;&#x4E2D;</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8AAA;&#xFF0C;&#x5728;&#x5B58;&#x53D6;&#x7BC4;&#x570D;&#x5167;&#x7684;&#x7A0B;&#x5F0F;&#xFF0C;&#x6216;&#x8005;&#x5C07;&#x533F;&#x540D;&#x7269;&#x4EF6;&#x7576;&#x4F5C; <code>private</code> &#x65B9;&#x6CD5;&#x56DE;&#x50B3;&#x503C;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x533F;&#x540D;&#x7269;&#x4EF6;&#x4E2D;&#x7684;&#x5C6C;&#x6027;&#x6216;&#x8005;&#x65B9;&#x6CD5;&#x7684;</p>
+<p>&#x76F8;&#x5C0D;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x8A72;&#x533F;&#x540D;&#x7269;&#x4EF6;&#x88AB;&#x7576;&#x4F5C; <code>public</code> &#x65B9;&#x6CD5;&#x7684;&#x56DE;&#x50B3;&#x503C;&#xFF0C;&#x90A3;&#x5728;&#x7B2C; 1. &#x7A2E;&#x60C5;&#x6CC1;&#xFF0C;&#x56DE;&#x50B3;&#x7684;&#x578B;&#x5225;&#x6703;&#x662F; <code>Any</code>&#xFF0C;&#x800C;&#x7B2C; 2. &#x7A2E;&#x60C5;&#x6CC1;&#x56DE;&#x50B3;&#x7684;&#x6703;&#x662F; <code>Item, Valuable</code> &#x7684;&#x578B;&#x5225;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x7236;&#x985E;&#x5225;&#x6216;&#x4ECB;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x5C6C;&#x6027;</p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">open</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Parent</span> </span>{
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> y</span>:String = <span class="hljs-string">&quot;y&quot;</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Child</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">privateMethod</span><span class="hljs-params">()</span> = <span class="hljs-keyword">object</span> : <span class="hljs-title">Parent</span><span class="hljs-params">()</span> {</span>
+        <span class="hljs-variable"><span class="hljs-keyword">val</span> x</span>:String = <span class="hljs-string">&quot;x&quot;</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">publicMethod</span><span class="hljs-params">()</span> = <span class="hljs-keyword">object</span> : <span class="hljs-title">Parent</span><span class="hljs-params">()</span> {</span>
+        <span class="hljs-variable"><span class="hljs-keyword">val</span> x</span>:String = <span class="hljs-string">&quot;x&quot;</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> {</span>
+        <span class="hljs-variable"><span class="hljs-keyword">val</span> priObj</span> = privateMethod()
+        println(priObj.x) <span class="hljs-comment">// &#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x533F;&#x540D;&#x7269;&#x4EF6;&#x7684;&#x5C6C;&#x6027;</span>
+        println(priObj.y) <span class="hljs-comment">// &#x4E5F;&#x53EF;&#x5B58;&#x53D6;&#x533F;&#x540D;&#x7269;&#x4EF6;&#x7236;&#x985E;&#x5225;&#x7684;&#x5C6C;&#x6027;</span>
+
+        <span class="hljs-variable"><span class="hljs-keyword">val</span> pubObj</span> = publicMethod()
+        println(pubObj.y) <span class="hljs-comment">// &#x53EA;&#x80FD;&#x5B58;&#x53D6;&#x5230;&#x7236;&#x985E;&#x5225;&#x7684;&#x5C6C;&#x6027;</span>
+    }
+}
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x4E0A;&#xFF0C;&#x533F;&#x540D;&#x7269;&#x4EF6;&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x8A72;&#x4F5C;&#x7528;&#x57DF;&#x5167;&#x5B9A;&#x7FA9;&#x7684;&#x6210;&#x54E1;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">test</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> x</span> = <span class="hljs-number">10</span>
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> obj</span> = <span class="hljs-keyword">object</span> {
+        <span class="hljs-variable"><span class="hljs-keyword">var</span> y</span> = x * <span class="hljs-number">10</span>
+    }
+}
+</code></pre>
+<hr>
+<h1 id="&#x6578;&#x64DA;&#x7269;&#x4EF6;-data-object">&#x6578;&#x64DA;&#x7269;&#x4EF6; (Data Object)</h1>
+<blockquote>
+<p>&#x8CA7;&#x8840;&#x6A21;&#x578B; (Anemic Domain Model) &#x662F;&#x4E00;&#x7A2E;&#x9664;&#x4E86; getter &#x548C; setter &#x4EE5;&#x5916;&#x6C92;&#x6709;&#x5225;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x985E;&#x5225;&#x7D50;&#x69CB;
+&#x5728; Java &#x4E2D;&#x5E38;&#x7528;&#x7684; JavaBean &#x5C31;&#x662F;&#x4E00;&#x7A2E;&#x5178;&#x578B;&#x7684;&#x8CA7;&#x8840;&#x6A21;&#x578B;
+&#x4E5F;&#x985E;&#x4F3C; Lombok &#x4E2D;&#x7684; @Data &#x6A19;&#x8A3B;</p>
+</blockquote>
+<p>Kotlin &#x4E2D;&#x5C07;&#x985E;&#x5225;&#x5BA3;&#x544A;&#x70BA; <code>data</code> &#x578B;&#x985E;&#x5225;&#xFF0C;&#x4E26;&#x6709;&#x4E00;&#x4E9B;&#x689D;&#x4EF6;</p>
+<ul>
+<li>&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x81F3;&#x5C11;&#x9700;&#x8981;&#x4E00;&#x500B;&#x5C6C;&#x6027;</li>
+<li>&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x53EA;&#x80FD;&#x5305;&#x542B;&#x5C6C;&#x6027;&#xFF0C;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x53C3;&#x6578; -&gt; &#x4E00;&#x5B9A;&#x8981;&#x4F7F;&#x7528; <code>var</code> &#x6216; <code>val</code> &#x4FEE;&#x98FE;</li>
+<li>&#x985E;&#x5225;&#x5BA3;&#x544A;&#x4E0D;&#x80FD;&#x6709; <code>abstract</code>&#x3001;<code>open</code>&#x3001;<code>sealed</code>&#x3001;<code>inner</code> &#x4FEE;&#x98FE;&#x5B50;</li>
+<li>&#x4E0D;&#x53EF;&#x4EE5;&#x8986;&#x5BEB; <code>copy()</code> &#x53CA; <code>componentN()</code> &#x65B9;&#x6CD5;</li>
+</ul>
+<p>kotlin &#x6703;&#x81EA;&#x52D5;&#x8986;&#x84CB;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5; :</p>
+<ul>
+<li><code>equals()</code> : &#x6703;&#x81EA;&#x52D5;&#x6BD4;&#x8F03;&#x5C6C;&#x6027;&#x5167;&#x5BB9;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x53C3;&#x8003;&#x4F4D;&#x7F6E;</li>
+<li><code>hashCode()</code> : &#x96DC;&#x6E4A;&#x503C;&#x4E5F;&#x6703;&#x4F9D;&#x7167;&#x5C6C;&#x6027;&#x5167;&#x5BB9;&#x8A08;&#x7B97;</li>
+<li><code>toString()</code> : &#x81EA;&#x52D5;&#x5957;&#x7528; <code>&#x985E;&#x5225;&#x540D;&#x7A31;(&#x5C6C;&#x6027;&#x540D;&#x7A31;=&#x5C6C;&#x6027;&#x503C;)</code> &#x7684;&#x6587;&#x5B57;&#x6A21;&#x677F;</li>
+<li><code>componentN()</code> : &#x81EA;&#x52D5;&#x7522;&#x751F;&#x4F9D;&#x7167;&#x5EFA;&#x69CB;&#x9806;&#x5E8F;&#x7684;&#x89E3;&#x69CB;&#x65B9;&#x6CD5;</li>
+<li><code>copy()</code> : &#x6DFA;&#x5C64;&#x8907;&#x88FD;&#x7269;&#x4EF6;</li>
+</ul>
+<h3 id="&#x6CE8;&#x610F;&#x7D30;&#x7BC0;">&#x6CE8;&#x610F;&#x7D30;&#x7BC0;</h3>
+<ol>
+<li><p>&#x57FA;&#x672C;&#x4E0A;&#x5C6C;&#x6027;&#x90FD;&#x5305;&#x542B;&#x5728;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x67D0;&#x4E9B;&#x5C6C;&#x6027;&#x80FD;&#x5920;&#x88AB;&#x6392;&#x9664;&#xFF0C;&#x90A3;&#x5C31;&#x5F97;&#x5C07;&#x5C6C;&#x6027;&#x5BA3;&#x544A;&#x5728;&#x985E;&#x5225;&#x5167;&#x90E8;</p>
+<pre><code class="lang-kotlin"> data <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeData</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> name</span>:String, <span class="hljs-variable"><span class="hljs-keyword">val</span> age</span>:<span class="hljs-keyword">Int</span>) {
+     <span class="hljs-variable"><span class="hljs-keyword">var</span> size</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span> <span class="hljs-comment">// &#x6703;&#x88AB;&#x6392;&#x9664;&#x8A08;&#x7B97;</span>
+ }
+</code></pre>
+</li>
+<li><p>&#x5982;&#x679C;&#x624B;&#x52D5;&#x5BE6;&#x73FE;&#x4E86;&#x81EA;&#x52D5;&#x8986;&#x84CB;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x8005;&#x7236;&#x985E;&#x5225;&#x5C0D;&#x9019;&#x4E9B;&#x65B9;&#x6CD5;&#x5BA3;&#x544A;&#x4E86; <code>final</code>&#xFF0C;&#x5247;&#x4E0D;&#x6703;&#x8986;&#x84CB;</p>
+</li>
+<li>&#x5982;&#x679C;&#x7236;&#x985E;&#x5225;&#x4E2D;&#x8072;&#x660E;&#x4E86; final &#x7684; componentN &#x89E3;&#x69CB;&#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x8005;&#x8A72;&#x65B9;&#x6CD5;&#x7684;&#x7C3D;&#x540D;&#x8207;&#x5B50;&#x985E;&#x5225;&#x4E0D;&#x517C;&#x5BB9;&#xFF0C;&#x7DE8;&#x8B6F;&#x5668;&#x6703;&#x76F4;&#x63A5;&#x5831;&#x932F;</li>
+<li>&#x4E0D;&#x80FD;&#x7E7C;&#x627F;&#x6709;&#x81EA;&#x5B9A;&#x7FA9; <code>copy()</code> &#x65B9;&#x6CD5;&#x7684;&#x7236;&#x985E;&#x5225;</li>
+</ol>
+<hr>
+<h1 id="&#x5217;&#x8209;-enum">&#x5217;&#x8209; (enum)</h1>
+<p>&#x4FEE;&#x98FE;&#x5B50; : <code>enum</code></p>
+<p>&#x661F;&#x671F;&#x7BC4;&#x4F8B; :</p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">enum</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WeekDay</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> abbr</span>:String) {
+    Monday(<span class="hljs-string">&quot;Mon&quot;</span>), Tuesday(<span class="hljs-string">&quot;Tue&quot;</span>), Wednesday(<span class="hljs-string">&quot;Wed&quot;</span>), Thursday(<span class="hljs-string">&quot;Thu&quot;</span>),
+    Friday(<span class="hljs-string">&quot;Fri&quot;</span>), Saturday(<span class="hljs-string">&quot;Sat&quot;</span>), Sunday(<span class="hljs-string">&quot;Sun&quot;</span>);
+
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">isWeekEnd</span><span class="hljs-params">()</span>:<span class="hljs-keyword">Boolean</span> = this == Saturday &amp;&amp; this == Sunday</span>
+}
+</code></pre>
+<blockquote>
+<h1 id="&#x91CD;&#x8981;">&#x91CD;&#x8981;!</h1>
+<p>&#x5982;&#x679C;&#x5728;&#x5217;&#x8209;&#x503C;&#x4E4B;&#x4E0B;&#x9084;&#x6709;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x7A0B;&#x5F0F;&#xFF0C;&#x50CF;&#x662F;&#x65B9;&#x6CD5;&#x6216;&#x5176;&#x4ED6;&#x5BA3;&#x544A;&#xFF0C;&#x90A3;&#x5217;&#x8209;&#x503C;&#x7D50;&#x675F;&#x9700;&#x8981;&#x4EE5;&#x5206;&#x865F; <code>;</code> &#x7D50;&#x5C3E;
+&#x9019;&#x53EF;&#x80FD;&#x662F;&#x6574;&#x500B; kotlin &#x8A9E;&#x8A00;&#x4E2D;&#x552F;&#x4E00;&#x5F37;&#x5236;&#x9700;&#x8981;&#x52A0;&#x4E0A;&#x5206;&#x865F;&#x7684;&#x5730;&#x65B9;&#x4E86;</p>
+</blockquote>
+<p>&#x4F7F;&#x7528;&#x65B9;&#x6CD5; :</p>
+<ol>
+<li><p>&#x76F4;&#x63A5;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-kotlin"> <span class="hljs-variable"><span class="hljs-keyword">val</span> monday</span> = WeekDay.Monday
+</code></pre>
+</li>
+<li><p>&#x900F;&#x904E;&#x96B1;&#x85CF;&#x7684; name &#x5C6C;&#x6027; (name &#x5C6C;&#x6027;&#x548C;&#x5217;&#x8209;&#x6210;&#x54E1;&#x503C;&#x76F8;&#x540C;)</p>
+<pre><code class="lang-kotlin"> <span class="hljs-variable"><span class="hljs-keyword">val</span> mondayByName</span> = WeekDay.valueOf(<span class="hljs-string">&quot;Monday&quot;</span>)
+</code></pre>
+<p> &#x4F7F;&#x7528;&#x9019;&#x7A2E;&#x65B9;&#x6CD5;&#x53D6;&#x5F97;&#xFF0C;&#x5982;&#x679C;&#x5E36;&#x5165;&#x7684;&#x5B57;&#x9762;&#x503C;&#x6C92;&#x6709;&#x5C0D;&#x61C9;&#x7684;&#x5217;&#x8209;&#x503C;&#xFF0C;&#x5247;&#x6703;&#x62CB;&#x51FA; java.lang.IllegalArgumentException: No enum constant</p>
+</li>
+<li>&#x900F;&#x904E;&#x4F4D;&#x7F6E;&#x53D6;&#x5F97;<pre><code class="lang-kotlin"> <span class="hljs-variable"><span class="hljs-keyword">val</span> mondayByOrder</span> = WeekDay.values()[<span class="hljs-number">0</span>]
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x5217;&#x8209;&#x503C;&#x65B9;&#x6CD5;">&#x5217;&#x8209;&#x503C;&#x65B9;&#x6CD5;</h2>
+<p>&#x5217;&#x8209;&#x503C;&#x7684;&#x65B9;&#x6CD5;&#x6703;&#x5BEB;&#x5728;&#x6BCF;&#x4E00;&#x500B;&#x5217;&#x8209;&#x5C0D;&#x8C61;&#x7684;&#x9589;&#x5305;&#x5167;</p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">enum</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WeekEnd</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> abbr</span>:String) {
+    Saturday(<span class="hljs-string">&quot;Sat&quot;</span>) {
+        <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">chineseDesc</span><span class="hljs-params">()</span> = &quot;&#x661F;&#x671F;&#x516D;&quot;</span>
+    },
+    Sunday(<span class="hljs-string">&quot;Sun&quot;</span>) {
+        <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">chineseDesc</span><span class="hljs-params">()</span> = &quot;&#x661F;&#x671F;&#x65E5;&quot;</span>
+    };
+
+    abstract <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">chineseDesc</span><span class="hljs-params">()</span>:String <span class="hljs-comment">// &#x6B64;&#x985E;&#x5225;&#x7684;&#x5BE6;&#x4F8B;(&#x5217;&#x8209;&#x5C0D;&#x8C61;)&#x90FD;&#x8981;&#x5BE6;&#x73FE;&#x6B64;&#x65B9;&#x6CD5;</span></span>
+}
+</code></pre>
+<hr>
+<h1 id="&#x5BC6;&#x5C01;">&#x5BC6;&#x5C01;</h1>
+<p>&#x4FEE;&#x98FE;&#x5B50; : <code>sealed</code></p>
+<p>&#x5BC6;&#x5C01;&#x985E;&#x5225;&#x500B;&#x4EBA;&#x89E3;&#x8B80;&#x662F;&#x4E00;&#x7A2E;&#x5F37;&#x5316;&#x5217;&#x8209;&#x7684;&#x985E;&#x5225;&#xFF0C;&#x5728;&#x5217;&#x8209;&#x4E2D;&#xFF0C;&#x6240;&#x6709;&#x5217;&#x8209;&#x503C;&#x7684;&#x578B;&#x5225;&#x90FD;&#x662F;&#x8A72;&#x5217;&#x8209;&#x985E;&#x5225;&#xFF0C;&#x6240;&#x6709;&#x5217;&#x8209;&#x5C0D;&#x8C61;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5C6C;&#x6027;&#xFF0C;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>&#x4F46;&#x662F;&#x5728;&#x5BC6;&#x5C01;&#x985E;&#x5225;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x500B;&#x5BC6;&#x5C01;&#x5C0D;&#x8C61;&#x53EF;&#x4EE5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5C6C;&#x6027;&#x548C;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x70BA;&#x5176;&#x5BE6;&#x4ED6;&#x5011;&#x90FD;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x985E;&#x5225;&#xFF0C;&#x53EA;&#x662F;&#x6709;&#x5171;&#x540C;&#x7684;&#x7236;&#x985E;&#x5225;&#x800C;&#x5DF2;</p>
+<p>&#x4F7F;&#x7528;&#x4E0A; <code>open</code> &#x548C; <code>sealed</code> &#x7684;&#x5DEE;&#x7570;&#x662F;
+&#x5BC6;&#x5C01;&#x985E;&#x5225;&#x7684;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x7121;&#x6CD5;&#x5728;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x76F4;&#x63A5;&#x751F;&#x6210;&#x5BC6;&#x5C01;&#x985E;&#x5225;&#x7684;&#x7269;&#x4EF6;
+&#x4F46;&#x662F; <code>sealed</code> &#x7684; <strong>&#x5167;&#x5D4C;&#x5B50;&#x985E;&#x5225;</strong> &#x5C31;&#x6C92;&#x6709;&#x9019;&#x500B;&#x9650;&#x5236;</p>
+<pre><code class="lang-kotlin">sealed <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Event</span> </span>{  
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Send</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> target</span>:String):Event()  
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Receive</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> from</span>:String):Event()  
+}
+</code></pre>
+<ul>
+<li><code>Send</code> &#x6709; <code>target</code> &#x7684;&#x5C6C;&#x6027;</li>
+<li><code>Receive</code> &#x6709; <code>from</code> &#x5C6C;&#x6027;</li>
+</ul>
+<p>&#x4F7F;&#x7528;&#x4E0A;&#x76F8;&#x7576;&#x65BC;&#x5EFA;&#x7ACB;&#x4E00;&#x500B; Event &#x5B50;&#x985E;&#x5225;&#x7684;&#x5BE6;&#x4F8B;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> sendToJhon</span> = Event.Send(target = <span class="hljs-string">&quot;John&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> receiveFromTom</span> = Event.Receive(from = <span class="hljs-string">&quot;Tom&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> event</span> = Event() <span class="hljs-comment">// &#x5831;&#x932F;! &#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x7522;&#x751F;&#x5BC6;&#x5C01;&#x985E;&#x5225;&#x7684;&#x7269;&#x4EF6;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x8AAA;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x500B;&#x7D14;&#x7CB9;&#x7684;&#x5B50;&#x985E;&#x5225;&#x4E0D;&#x542B;&#x5C6C;&#x6027;&#x4E26;&#x4E14;&#x5E0C;&#x671B;&#x50CF; enum &#x90A3;&#x6A23;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x642D;&#x914D; <code>object</code> &#x95DC;&#x9375;&#x5B57;</p>
+<pre><code class="lang-kotlin">sealed <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Event</span> </span>{
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Send</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> target</span>:String):Event()  
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Receive</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> from</span>:String):Event()
+    <span class="hljs-keyword">object</span> OnTheWay : Event()
+}
+</code></pre>
+<p>&#x9019;&#x6A23;&#x5728;&#x53D6;&#x5F97; <code>Event.OnTheWay</code> &#x7684;&#x6642;&#x5019;&#x5C31;&#x6703;&#x53D6;&#x5F97;&#x55AE;&#x4E00;&#x5BE6;&#x4F8B;&#x7684;&#x7269;&#x4EF6;&#xFF0C;&#x4E0D;&#x6703;&#x6BCF;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x90FD;&#x5275;&#x5EFA;&#x65B0;&#x7269;&#x4EF6;&#x51FA;&#x4F86;</p>
+<p>&#x4F7F;&#x7528;&#x4E0A;&#x642D;&#x914D; <code>when</code> &#x53EF;&#x4EE5;&#x7528; <code>is</code> &#x4F86;&#x5224;&#x5B9A;&#x578B;&#x5225;&#xFF0C;&#x4E26;&#x4E14;&#x5728;&#x6BCF;&#x4E00;&#x500B;&#x5340;&#x584A;&#x5167;&#x6703;&#x81EA;&#x52D5;&#x8F49;&#x578B;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {  </span>
+     <span class="hljs-variable"><span class="hljs-keyword">val</span> sendToJhon</span> = Event.Send(target = <span class="hljs-string">&quot;John&quot;</span>)  
+     <span class="hljs-variable"><span class="hljs-keyword">val</span> receiveFromTom</span> = Event.Receive(from = <span class="hljs-string">&quot;Tom&quot;</span>)  
+     <span class="hljs-variable"><span class="hljs-keyword">val</span> transmitting</span> = Event.OnTheWay  
+
+     <span class="hljs-variable"><span class="hljs-keyword">val</span> listEvents</span> = listOf(sendToJhon, receiveFromTom, transmitting)  
+
+     <span class="hljs-keyword">when</span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> obj</span>:Event = listEvents.random()) {
+         <span class="hljs-comment">// &#x6703;&#x5C07; obj &#x81EA;&#x52D5;&#x8F49;&#x578B;&#x6210; Event.Send&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5B58;&#x53D6; target &#x5C6C;&#x6027;</span>
+         <span class="hljs-keyword">is</span> Event.Send -&gt; println(obj.target) 
+        <span class="hljs-comment">// &#x6703;&#x5C07; obj &#x81EA;&#x52D5;&#x8F49;&#x578B;&#x6210; Event.Send&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5B58;&#x53D6; from &#x5C6C;&#x6027;</span>
+        <span class="hljs-keyword">is</span> Event.Receive -&gt; println(obj.from) 
+        <span class="hljs-comment">// &#x55AE;&#x4E00;&#x5BE6;&#x4F8B;&#x4E0D;&#x9700;&#x8981;&#x7528; is &#x578B;&#x5225;&#x5224;&#x65B7;&#xFF0C;&#x76F4;&#x63A5;&#x7B49;&#x65BC;&#x5224;&#x65B7;&#x5373;&#x53EF;</span>
+        Event.OnTheWay -&gt; println(<span class="hljs-string">&quot;event on the way&quot;</span>) 
+     }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="TYPE_AND_OBJECT.html" class="navigation navigation-prev " aria-label="Previous page: 物件與類別">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="IMPLEMENT.html" class="navigation navigation-next " aria-label="Next page: 繼承、抽象、介面">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"深入類別","level":"1.8","depth":1,"next":{"title":"繼承、抽象、介面","level":"1.9","depth":1,"path":"IMPLEMENT.md","ref":"IMPLEMENT.md","articles":[]},"previous":{"title":"物件與類別","level":"1.7","depth":1,"path":"TYPE_AND_OBJECT.md","ref":"TYPE_AND_OBJECT.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Matthew","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin 學習筆記","gitbook":"3.2.3","description":"CSO Kotlin 研究報告"},"file":{"path":"CLASS.md","mtime":"2021-11-05T08:54:08.705Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-11T05:39:36.005Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

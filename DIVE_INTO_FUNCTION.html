@@ -1,0 +1,668 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>深入方法 · Kotlin 學習筆記</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Matthew">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="EXCEPTION.html" />
+    
+    
+    <link rel="prev" href="EXTENSION_DELEGATE.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="BASIC.html">
+            
+                <a href="BASIC.html">
+            
+                    
+                    入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="OPERATOR.html">
+            
+                <a href="OPERATOR.html">
+            
+                    
+                    操作子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CONTROL_FLOW.html">
+            
+                <a href="CONTROL_FLOW.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="COLLECTION.html">
+            
+                <a href="COLLECTION.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="METHOD.html">
+            
+                <a href="METHOD.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="TYPE_AND_OBJECT.html">
+            
+                <a href="TYPE_AND_OBJECT.html">
+            
+                    
+                    物件與類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="CLASS.html">
+            
+                <a href="CLASS.html">
+            
+                    
+                    深入類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="IMPLEMENT.html">
+            
+                <a href="IMPLEMENT.html">
+            
+                    
+                    繼承、抽象、介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="PACKAGE.html">
+            
+                <a href="PACKAGE.html">
+            
+                    
+                    套件與存取修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="DEMO.html">
+            
+                <a href="DEMO.html">
+            
+                    
+                    程式示範
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="GENERIC.html">
+            
+                <a href="GENERIC.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="EXTENSION_DELEGATE.html">
+            
+                <a href="EXTENSION_DELEGATE.html">
+            
+                    
+                    擴展與代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="DIVE_INTO_FUNCTION.html">
+            
+                <a href="DIVE_INTO_FUNCTION.html">
+            
+                    
+                    深入方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="EXCEPTION.html">
+            
+                <a href="EXCEPTION.html">
+            
+                    
+                    例外處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="DSL.html">
+            
+                <a href="DSL.html">
+            
+                    
+                    DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >深入方法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="high-order-function">High Order Function</h1>
+<p>&#x4E00;&#x53E5;&#x8A71; : &#x5C07;&#x65B9;&#x6CD5;&#x7684; <strong>&#x683C;&#x5F0F;</strong> &#x8996;&#x70BA;&#x4E00;&#x7A2E;&#x985E;&#x5225;</p>
+<h2 id="&#x65B9;&#x6CD5;&#x7684;&#x683C;&#x5F0F;">&#x65B9;&#x6CD5;&#x7684;&#x683C;&#x5F0F;</h2>
+<p>&#x65B9;&#x6CD5;&#x7684;&#x53C3;&#x6578;&#x578B;&#x5225;&#x7D44;&#x5408;&#x52A0;&#x4E0A;&#x56DE;&#x50B3;&#x503C;&#x7684;&#x578B;&#x5225;&#x7D44;&#x5408;&#x70BA;&#x65B9;&#x6CD5;&#x7684; <strong>&#x683C;&#x5F0F;</strong></p>
+<p>&#x4F8B;&#x5982; :</p>
+<p><code>fun plus(x:Int,y:Int):Int = x + y</code></p>
+<p>&#x5C31;&#x662F;&#x4E00;&#x500B;&#x8F38;&#x5165;&#x5169;&#x500B; Int &#x4E26;&#x56DE;&#x50B3;&#x4E00;&#x500B; Int &#x985E;&#x578B;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>&#x800C; <strong>&#x8F38;&#x5165;&#x5169;&#x500B; Int &#x4E26;&#x56DE;&#x50B3;&#x4E00;&#x500B; Int</strong> &#x5C31;&#x662F;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x578B;&#x5225;</p>
+<p>&#x6240;&#x4EE5;&#x4E0A;&#x8FF0;&#x7684;&#x52A0;&#x6CD5;&#x548C;&#x4EE5;&#x4E0B;&#x7684;&#x6E1B;&#x6CD5;&#x90FD;&#x5C6C;&#x65BC;&#x540C;&#x4E00;&#x7A2E;&#x578B;&#x5225;</p>
+<p><code>fun minus(x:Int, y:Int):Int = x - y</code></p>
+<p>&#x5982;&#x679C;&#x65B9;&#x6CD5;&#x7684;&#x683C;&#x5F0F;&#x53EF;&#x4EE5;&#x88AB;&#x8996;&#x70BA;&#x4E00;&#x7A2E;&#x985E;&#x5225;&#xFF0C;&#x90A3;&#x985E;&#x5225;&#x53EF;&#x4EE5;&#x600E;&#x6A23;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x90A3;&#x6A23;&#x4F7F;&#x7528;</p>
+<blockquote>
+<p>&#x65B9;&#x6CD5;&#x683C;&#x5F0F;&#x8996;&#x70BA;&#x985E;&#x5225;&#x662F;&#x5728;&#x57F7;&#x884C;&#x6642;&#x671F;&#x52D5;&#x614B;&#x7DE8;&#x8B6F;</p>
+</blockquote>
+<h2 id="&#x65B9;&#x6CD5;&#x985E;&#x5225;">&#x65B9;&#x6CD5;&#x985E;&#x5225;</h2>
+<p>&#x8A9E;&#x6CD5; : </p>
+<ul>
+<li>&#x5BA3;&#x544A; : <code>(&#x53C3;&#x6578;&#x7D44;&#x5408;)-&gt;&#x56DE;&#x50B3;&#x503C;&#x985E;&#x578B;</code></li>
+<li>&#x5BE6;&#x9AD4; : &#x95DC;&#x9375;&#x5B57; <code>fun</code> &#x53D6;&#x4EE3;&#x65B9;&#x6CD5;&#x540D;&#x7A31;&#xFF0C;&#x5269;&#x4E0B;&#x5982;&#x4E00;&#x822C;&#x65B9;&#x6CD5;&#x5BE6;&#x73FE;&#x65B9;&#x6CD5;&#x5167;&#x5BB9;</li>
+</ul>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">var</span> plus</span>:(<span class="hljs-keyword">Int</span>, <span class="hljs-keyword">Int</span>)-&gt;<span class="hljs-keyword">Int</span> = <span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">(x:<span class="hljs-type">Int, y:Int</span>)</span>:<span class="hljs-keyword">Int</span> {</span>
+  <span class="hljs-keyword">return</span> x + y
+}
+</code></pre>
+<h2 id="&#x65B9;&#x6CD5;&#x53C3;&#x6578;">&#x65B9;&#x6CD5;&#x53C3;&#x6578;</h2>
+<p>&#x65E2;&#x7136;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x7A2E;&#x985E;&#x5225;&#xFF0C;&#x90A3;&#x5C31;&#x53EF;&#x4EE5;&#x7576;&#x4F5C;&#x53E6;&#x4E00;&#x500B;&#x65B9;&#x6CD5;&#x7684;&#x53C3;&#x6578;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">apply100</span><span class="hljs-params">(f:<span class="hljs-type">(Int</span>)</span>-&gt;<span class="hljs-keyword">Int</span>):<span class="hljs-keyword">Int</span> {  </span>
+    <span class="hljs-keyword">return</span> f(<span class="hljs-number">100</span>)  
+}  
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {  </span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> inc</span> = <span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">(x:<span class="hljs-type">Int</span>)</span>:<span class="hljs-keyword">Int</span> = x+1  </span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> dec</span> = <span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">(x:<span class="hljs-type">Int</span>)</span>:<span class="hljs-keyword">Int</span> = x-1  </span>
+    println(apply100(inc)) <span class="hljs-comment">// 101</span>
+    println(apply100(dec)) <span class="hljs-comment">// 99</span>
+}
+</code></pre>
+<h2 id="&#x65B9;&#x6CD5;&#x56DE;&#x50B3;">&#x65B9;&#x6CD5;&#x56DE;&#x50B3;</h2>
+<p>&#x65E2;&#x7136;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x7A2E;&#x985E;&#x5225;&#xFF0C;&#x4E5F;&#x80FD;&#x7576;&#x4F5C;&#x56DE;&#x50B3;&#x503C;</p>
+<p>&#x56DE;&#x50B3;&#x65B9;&#x6CD5;&#x6642;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x8A72;&#x65B9;&#x6CD5;&#x5DF2;&#x7D93;&#x8CE6;&#x4E88;&#x7D66;&#x67D0;&#x500B;&#x8B8A;&#x6578;&#xFF0C;&#x5247;&#x56DE;&#x50B3;&#x8A72;&#x8B8A;&#x6578;&#x5373;&#x53EF;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x56DE;&#x50B3;&#x65B9;&#x6CD5; <strong>&#x5BE6;&#x9AD4;</strong>&#xFF0C;&#x90A3;&#x8981;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x53C3;&#x8003;&#x5B50; <code>::</code> &#x4F86;&#x56DE;&#x50B3;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">operation</span><span class="hljs-params">(op:<span class="hljs-type">String</span>)</span>:<span class="hljs-params">(<span class="hljs-keyword">Int</span>,<span class="hljs-keyword">Int</span>)</span>-&gt;<span class="hljs-keyword">Int</span> {</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">plus</span><span class="hljs-params">(x:<span class="hljs-type">Int, y:Int</span>)</span> = x + y</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> minus</span> = <span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">(x:<span class="hljs-type">Int, y:Int</span>)</span> = x - y</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">if</span>(op == <span class="hljs-string">&quot;+&quot;</span>) ::plus <span class="hljs-keyword">else</span> minus 
+    <span class="hljs-comment">// plus &#x662F;&#x65B9;&#x6CD5;&#x5BE6;&#x9AD4;&#xFF0C;&#x9700;&#x4F7F;&#x7528; :: &#x56DE;&#x50B3;</span>
+    <span class="hljs-comment">// minus &#x5DF2;&#x7D93;&#x8B8A;&#x6578;&#x5316;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x56DE;&#x50B3;</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> add</span> = operation(<span class="hljs-string">&quot;+&quot;</span>)  
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> subtract</span> = operation(<span class="hljs-string">&quot;-&quot;</span>)  
+    println(add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)) <span class="hljs-comment">// 3</span>
+    println(subtract(<span class="hljs-number">4</span>,<span class="hljs-number">3</span>)) <span class="hljs-comment">// 1</span>
+}
+</code></pre>
+<hr>
+<h1 id="&#x65B9;&#x6CD5;&#x8868;&#x9054;&#x5F0F;">&#x65B9;&#x6CD5;&#x8868;&#x9054;&#x5F0F;</h1>
+<h2 id="lambda-&#x8868;&#x9054;&#x5F0F;">lambda &#x8868;&#x9054;&#x5F0F;</h2>
+<ul>
+<li>&#x56DE;&#x50B3;&#x503C;&#x5C31;&#x662F;&#x6700;&#x5F8C;&#x4E00;&#x884C;&#x7684;&#x57F7;&#x884C;&#x7D50;&#x679C;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x5BEB; <code>return</code></li>
+<li>&#x7121;&#x6CD5;&#x8072;&#x660E;&#x56DE;&#x50B3;&#x578B;&#x5225;</li>
+<li>kotlin &#x652F;&#x63F4;&#x81EA;&#x52D5;&#x57F7;&#x884C; lambda&#xFF0C;&#x610F;&#x601D;&#x662F;&#x53EF;&#x4EE5;&#x540C;&#x6642;&#x5BA3;&#x544A;&#x4E26;&#x547C;&#x53EB;<pre><code class="lang-kotlin">  <span class="hljs-variable"><span class="hljs-keyword">val</span> result</span> = {x:<span class="hljs-keyword">Int</span>,y:<span class="hljs-keyword">Int</span> -&gt; x+y}(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>) <span class="hljs-comment">// 3</span>
+</code></pre>
+</li>
+</ul>
+<p>&#x8A9E;&#x6CD5; :</p>
+<pre><code>{ &#x53C3;&#x6578;&#x5217;&#x8868; -&gt;
+    &#x4EFB;&#x610F;&#x57F7;&#x884C;&#x8A9E;&#x53E5;
+}
+</code></pre><p>&#x7BC4;&#x4F8B; :</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> sum</span> = { x:<span class="hljs-keyword">Int</span>, y:<span class="hljs-keyword">Int</span> -&gt; x + y }
+</code></pre>
+<p>&#x7B49;&#x540C;&#x65BC;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> sum</span> = <span class="hljs-function"><span class="hljs-title">fun</span><span class="hljs-params">(x:<span class="hljs-type">Int, y:Int</span>)</span>:<span class="hljs-keyword">Int</span> {</span>
+    <span class="hljs-keyword">return</span> x + y
+}
+</code></pre>
+<h3 id="&#x96B1;&#x85CF;&#x53C3;&#x6578;-it">&#x96B1;&#x85CF;&#x53C3;&#x6578; <code>it</code></h3>
+<p>&#x5982;&#x679C; lambda &#x53EA;&#x5305;&#x542B;&#x4E00;&#x500B;&#x53C3;&#x6578;&#xFF0C;&#x5247;&#x53C3;&#x6578;&#x8072;&#x660E;&#x672C;&#x8EAB;&#x53EF;&#x4EE5;&#x88AB;&#x7701;&#x7565;&#xFF0C;&#x6B64;&#x6642; lambda &#x6703;&#x751F;&#x6210;&#x96B1;&#x85CF;&#x53C3;&#x6578; <code>it</code> &#x53EF;&#x4EE5;&#x8B93;&#x5167;&#x90E8;&#x65B9;&#x6CD5;&#x672C;&#x9AD4;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> square</span>:(<span class="hljs-keyword">Int</span>)-&gt;<span class="hljs-keyword">Int</span> = { it * it }
+    println(square(<span class="hljs-number">5</span>)) <span class="hljs-comment">// 25</span>
+}
+</code></pre>
+<h3 id="&#x6700;&#x672B;&#x53C3;&#x6578;">&#x6700;&#x672B;&#x53C3;&#x6578;</h3>
+<p>&#x5982;&#x679C;&#x65B9;&#x6CD5;&#x7684;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x662F;&#x65B9;&#x6CD5;&#x985E;&#x578B;&#xFF0C;kotlin &#x5141;&#x8A31;&#x7528; lambda &#x8868;&#x9054;&#x5F0F;&#x63D0;&#x53D6;&#x5230;&#x53C3;&#x6578;&#x5217;&#x8868;&#x7684;&#x5C0F;&#x62EC;&#x865F;&#x4E4B;&#x5916;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">lastLambda</span><span class="hljs-params">(i:<span class="hljs-type">Int, lamb:(x:Int</span>)</span>-&gt;<span class="hljs-keyword">Int</span>):<span class="hljs-keyword">Int</span> = <span class="hljs-title">lamb</span><span class="hljs-params">(i)</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {  </span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> result</span> = lastLambda(<span class="hljs-number">2</span>) {  
+        it*it  
+    }  
+    println(result) <span class="hljs-comment">// 4</span>
+}
+</code></pre>
+<h3 id="lambda-&#x4E2D;&#x624B;&#x52D5;&#x56DE;&#x50B3;&#x503C;">lambda &#x4E2D;&#x624B;&#x52D5;&#x56DE;&#x50B3;&#x503C;</h3>
+<p>lambda &#x8868;&#x9054;&#x5F0F;&#x9810;&#x8A2D;&#x5F0F;&#x56DE;&#x50B3;&#x6700;&#x5F8C;&#x4E00;&#x884C;&#x7A0B;&#x5F0F;&#x7684;&#x57F7;&#x884C;&#x7D50;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x624B;&#x52D5;&#x56DE;&#x50B3; (<code>return</code>)&#xFF0C;&#x56E0;&#x70BA;&#x5728; &quot;&#x4F7F;&#x7528;&#x60C5;&#x5883;&quot; &#x4E0B;&#xFF0C;lambda &#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x4E26;&#x4E0D;&#x503C;&#x89C0;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x6A19;&#x660E; <strong>&#x8FD4;&#x56DE;&#x7684;&#x4F5C;&#x7528;&#x57DF;</strong></p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">apply</span><span class="hljs-params">(list:<span class="hljs-type">List&lt;Int&gt;, lambda:(Int</span>)</span>-&gt;String) {  </span>
+    <span class="hljs-keyword">for</span> (item <span class="hljs-keyword">in</span> list) {  
+        println(<span class="hljs-string">&quot;&#x5C07; item:$item &#x7576;&#x5F15;&#x6578;&#x5E36;&#x5165; lambda:${lambda(item)}&quot;</span>)  
+    }
+}  
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {  </span>
+    apply(listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)) {  
+        <span class="hljs-keyword">if</span> (it % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {  
+            <span class="hljs-keyword">return</span>@apply <span class="hljs-string">&quot;&#x5076;&#x6578;&quot;</span> <span class="hljs-comment">//&#x7279;&#x5225;&#x6A19;&#x8A3B;&#x662F; return@apply &#x9019;&#x500B;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x800C;&#x4E0D;&#x662F; main</span>
+        }  
+        <span class="hljs-keyword">return</span>@apply <span class="hljs-string">&quot;&#x5947;&#x6578;&quot;</span> <span class="hljs-comment">//&#x7279;&#x5225;&#x6A19;&#x8A3B;&#x662F; return@apply &#x9019;&#x500B;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x800C;&#x4E0D;&#x662F; main</span>
+    }  
+    <span class="hljs-comment">/**
+    &#x5C07; item:1 &#x7576;&#x5F15;&#x6578;&#x5E36;&#x5165; lambda:&#x5947;&#x6578;
+    &#x5C07; item:2 &#x7576;&#x5F15;&#x6578;&#x5E36;&#x5165; lambda:&#x5076;&#x6578;
+    &#x5C07; item:3 &#x7576;&#x5F15;&#x6578;&#x5E36;&#x5165; lambda:&#x5947;&#x6578;
+    */</span>
+}
+</code></pre>
+<hr>
+<h1 id="&#x518D;&#x8AC7;&#x5167;&#x5D4C;&#x65B9;&#x6CD5;">&#x518D;&#x8AC7;&#x5167;&#x5D4C;&#x65B9;&#x6CD5;</h1>
+<h2 id="&#x4E0D;&#x53C3;&#x8207;&#x5167;&#x5D4C;&#x7684;&#x53C3;&#x6578;">&#x4E0D;&#x53C3;&#x8207;&#x5167;&#x5D4C;&#x7684;&#x53C3;&#x6578;</h2>
+<p>&#x5167;&#x5D4C;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8A72;&#x65B9;&#x6CD5;&#x6709;&#x65B9;&#x6CD5;&#x985E;&#x578B;&#x53C3;&#x6578;&#xFF0C;&#x4F46;&#x662F; <strong>&#x4E0D;&#x5E0C;&#x671B;&#x8A72;&#x53C3;&#x6578;&#x88AB;&#x5167;&#x5D4C;&#x5230;&#x4F7F;&#x7528;&#x7684;&#x5730;&#x65B9;</strong>&#xFF0C;&#x5E0C;&#x671B;&#x8A72;&#x65B9;&#x6CD5;&#x80FD;&#x5920;&#x7368;&#x7ACB;&#x51FA;&#x4F86;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4FEE;&#x98FE;&#x5B50; <code>noinline</code></p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">apply</span><span class="hljs-params">(list:<span class="hljs-type">List&lt;Int&gt;, noinline lambda:(Int</span>)</span>-&gt;String){</span>
+}
+</code></pre>
+<h2 id="&#x8FD4;&#x56DE;">&#x8FD4;&#x56DE;</h2>
+<p>&#x56E0;&#x70BA;&#x5167;&#x5D4C;&#x65B9;&#x6CD5;&#x6703;&#x5C07;&#x6574;&#x500B;&#x65B9;&#x6CD5;&#x672C;&#x9AD4;&#x8986;&#x84CB;&#x5230;&#x547C;&#x53EB;&#x7684;&#x5730;&#x65B9;</p>
+<p>&#x9019;&#x6642;&#x5019;&#x5982;&#x679C;&#x65B9;&#x6CD5;&#x672C;&#x9AD4;&#x5167;&#x6709; <code>return</code> &#x7684;&#x95DC;&#x9375;&#x5B57;&#xFF0C;&#x90A3;&#x547C;&#x53EB;&#x7684;&#x4E3B;&#x7A0B;&#x5F0F;&#x5C07;&#x6703;&#x88AB;&#x8FD4;&#x56DE;</p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">apply</span><span class="hljs-params">(list:<span class="hljs-type">List&lt;Int&gt;, lambda:(Int</span>)</span>-&gt;String) {  </span>
+    <span class="hljs-keyword">for</span> (item <span class="hljs-keyword">in</span> list) {  
+        println(<span class="hljs-string">&quot;&#x5C07; item:$item &#x7576;&#x5F15;&#x6578;&#x5E36;&#x5165; lambda:${lambda(item)}&quot;</span>)  
+    }
+}  
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {  </span>
+    apply(listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)) {  
+        <span class="hljs-keyword">if</span> (it % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {  
+            println(<span class="hljs-string">&quot;&#x5076;&#x6578;&quot;</span>)
+            <span class="hljs-keyword">return</span>
+        }
+        println(<span class="hljs-string">&quot;&#x5947;&#x6578;&quot;</span>)
+        <span class="hljs-keyword">return</span>
+    }  
+    <span class="hljs-comment">/**
+    &quot;&#x5947;&#x6578;&quot;
+    */</span>
+}
+</code></pre>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x9032;&#x5165; lambda &#x7684;&#x6642;&#x5019;&#x5370;&#x51FA; &quot;&#x5947;&#x6578;&quot; &#x5F8C;&#x5C31;&#x76F4;&#x63A5;&#x628A; main &#x8FD4;&#x56DE;&#x4E86;
+&#x5982;&#x679C;&#x4E0D;&#x5E0C;&#x671B;&#x6709;&#x9019;&#x7A2E;&#x8AA4;&#x7528;&#x767C;&#x751F;
+&#x53EF;&#x4EE5;&#x7528; <code>crossinline</code> &#x4F86;&#x4FEE;&#x98FE;&#x65B9;&#x6CD5;&#x985E;&#x578B;&#x8B8A;&#x6578;&#xFF0C;&#x9019;&#x6A23;&#x5C31;&#x4E0D;&#x5141;&#x8A31;&#x518D;&#x65B9;&#x6CD5;&#x672C;&#x9AD4;&#x5167;&#x64B0;&#x5BEB; <code>return</code> &#x95DC;&#x9375;&#x5B57;&#xFF0C;&#x7DE8;&#x8B6F;&#x5668;&#x6703;&#x503C;&#x5831;&#x932F;</p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">apply</span><span class="hljs-params">(list:<span class="hljs-type">List&lt;Int&gt;, crollinline lambda:(Int</span>)</span>-&gt;String) {  </span>
+    <span class="hljs-keyword">for</span> (item <span class="hljs-keyword">in</span> list) {  
+        println(<span class="hljs-string">&quot;&#x5C07; item:$item &#x7576;&#x5F15;&#x6578;&#x5E36;&#x5165; lambda:${lambda(item)}&quot;</span>)  
+    }
+}  
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {  </span>
+    apply(listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)) {  
+        <span class="hljs-keyword">if</span> (it % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) {  
+            println(<span class="hljs-string">&quot;&#x5076;&#x6578;&quot;</span>)
+            <span class="hljs-keyword">return</span> <span class="hljs-comment">// &lt;-- &#x5831;&#x932F;! &apos;return&apos; is not allowed here</span>
+        }
+        println(<span class="hljs-string">&quot;&#x5947;&#x6578;&quot;</span>)
+        <span class="hljs-keyword">return</span> <span class="hljs-comment">// &lt;-- &#x5831;&#x932F;! &apos;return&apos; is not allowed here</span>
+    }
+}
+</code></pre>
+<hr>
+<h1 id="&#x905E;&#x8FF4;&#x8F49;&#x8FF4;&#x5708;">&#x905E;&#x8FF4;&#x8F49;&#x8FF4;&#x5708;</h1>
+<p>&#x6709;&#x4E9B;&#x65B9;&#x6CD5;&#x6703;&#x4EE5;&#x81EA;&#x5DF1;&#x905E;&#x8FF4;&#x547C;&#x53EB;&#x81EA;&#x5DF1;&#x7684;&#x65B9;&#x6CD5;&#x64B0;&#x5BEB;
+&#x6709;&#x4E9B;&#x6642;&#x5019;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x6703;&#x9020;&#x6210;&#x6548;&#x80FD;&#x4E0A;&#x7684;&#x6D88;&#x8017;
+kotlin &#x53EF;&#x4EE5;&#x81EA;&#x52D5;&#x5C07;&#x9019;&#x7A2E;&#x65B9;&#x6CD5;&#x8F49;&#x63DB;&#x70BA;&#x8FF4;&#x5708;&#x547C;&#x53EB;&#x7684;&#x65B9;&#x5F0F;
+&#x958B;&#x767C;&#x8005;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x81EA;&#x5DF1;&#x53BB;&#x8F49;&#x63DB;</p>
+<p>&#x4FEE;&#x98FE;&#x5B50; : <code>tailrec</code></p>
+<pre><code class="lang-kotlin">tailrec <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">factorial</span><span class="hljs-params">(n:<span class="hljs-type">Int, result:int</span> = 1)</span>:<span class="hljs-keyword">Int</span> {</span>
+    <span class="hljs-keyword">if</span> (n == <span class="hljs-number">1</span>) {
+        <span class="hljs-keyword">return</span> result    
+    }
+    <span class="hljs-keyword">return</span> factorial(n<span class="hljs-number">-1</span>, result*n)
+}
+</code></pre>
+<p>&#x4E26;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x905E;&#x8FF4;&#x547C;&#x53EB; kotlin &#x90FD;&#x80FD;&#x81EA;&#x52D5;&#x8F49;&#x63DB;&#x6210;&#x8FF4;&#x5708;&#x547C;&#x53EB;&#xFF0C;&#x9700;&#x8981;&#x6EFF;&#x8DB3;&#x4EE5;&#x4E0B;&#x689D;&#x4EF6;</p>
+<ul>
+<li>&#x65B9;&#x6CD5;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x5BA3;&#x544A; <strong>&#x82E5;&#x4E14;&#x552F;&#x82E5;</strong> &#x662F;&#x547C;&#x53EB;&#x8A72;&#x65B9;&#x6CD5;</li>
+<li>&#x4E0A;&#x8FF0;&#x5BA3;&#x544A;&#x9664;&#x4E86;&#x547C;&#x53EB;&#x65B9;&#x6CD5;&#x4EE5;&#x5916;&#x4E0D;&#x80FD;&#x51FA;&#x73FE;&#x5176;&#x4ED6;&#x904B;&#x7B97;&#x7B26;&#x865F;&#xFF0C;&#x5373;&#x4E0A;&#x8FF0;&#x7BC4;&#x4F8B;&#x4E2D;&#x6700;&#x5F8C;&#x4E00;&#x884C;&#x5982;&#x679C;&#x662F; <code>return factorial(n-1, result*n) * 1</code> &#x5C31;&#x4E0D;&#x884C;&#xFF0C;&#x4E0D;&#x884C;&#x4E86;&#x8A71;&#x8868;&#x793A; <code>tailrec</code> &#x5931;&#x6557;&#xFF0C;&#x65B9;&#x6CD5;&#x9084;&#x662F;&#x4FDD;&#x6301;&#x905E;&#x8FF4;&#x547C;&#x53EB;</li>
+</ul>
+<hr>
+<h1 id="&#x96C6;&#x5408;&#x5167;&#x5EFA;-lambda-&#x65B9;&#x6CD5;">&#x96C6;&#x5408;&#x5167;&#x5EFA; lambda &#x65B9;&#x6CD5;</h1>
+<h2 id="map">map()</h2>
+<p>&#x7D50;&#x69CB; : <code>map(transform:(T)-&gt;R):List&lt;R&gt;</code></p>
+<p>&#x5C07;&#x4E00;&#x500B; T &#x578B;&#x5225;&#x96C6;&#x5408;&#x5167;&#x7684;&#x5143;&#x7D20;&#x5E36;&#x5165; transform &#x64CD;&#x4F5C;&#x5F8C;&#x56DE;&#x50B3; R &#x578B;&#x5225;&#x7684;&#x56DE;&#x50B3;&#x503C;&#x4E26;&#x628A;&#x7D50;&#x679C;&#x96C6;&#x5408;&#x6210; List</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = intArrayOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> squares</span> = numbers.map { it * it } <span class="hljs-comment">// 1, 4, 9, 16, 25</span>
+</code></pre>
+<h2 id="flatmap">flatMap()</h2>
+<p>&#x7D50;&#x69CB; : <code>flatMap(transform:(T)-&gt;Iterable&lt;R&gt;):List&lt;R&gt;</code></p>
+<p>&#x5C07;&#x4E00;&#x500B;&#x4EE5;&#x4E0A; T &#x578B;&#x5225;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E00;&#x8D77;&#x505A; transform &#x64CD;&#x4F5C;&#x6700;&#x7D42;&#x96C6;&#x5408;&#x6210;&#x4E00;&#x500B; R &#x578B;&#x5225;&#x7684; List</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers1</span> = listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> numbers2</span> = listOf(<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>)
+
+listOf(numbers1, numbers2).flatMap { it + <span class="hljs-number">1</span> } <span class="hljs-comment">// 2,3,4,5,6,7,11,21,31</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x8981;&#x628A;&#x591A;&#x500B;&#x540C;&#x578B;&#x5225;&#x96C6;&#x5408;&#x5E73;&#x62CD;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x6C92;&#x6709;&#x8981;&#x53E6;&#x5916;&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>flatten</code></p>
+<pre><code class="lang-kotlin">listOf(numbers1,numbers2).flatten() <span class="hljs-comment">// 1,2,3,4,5,6,10,20,30</span>
+</code></pre>
+<h2 id="zip">zip()</h2>
+<p>&#x7D50;&#x69CB; : <code>zip(other:Array&lt;out R&gt;):List&lt;Pair&lt;T,R&gt;&gt;</code></p>
+<p>&#x9023;&#x63A5;&#x5169;&#x500B;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6578;&#x64DA;
+&#x4EE5;&#x4E00;&#x5C0D;&#x4E00;&#x7684;&#x65B9;&#x5F0F;&#x9032;&#x884C;&#x7D44;&#x5408;&#x6210; Pair
+&#x4E26;&#x5C07; Pair &#x7269;&#x4EF6;&#x96C6;&#x5408;&#x6210; List
+&#x6700;&#x7D42;&#x7D50;&#x679C;&#x6703;&#x53D6;&#x6C7A;&#x65BC;&#x9577;&#x5EA6;&#x8F03;&#x77ED;&#x7684;&#x90A3;&#x500B;&#x96C6;&#x5408;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers1</span> = listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> numbers2</span> = listOf(<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>)
+println(numbers1.zip(numbers2)) <span class="hljs-comment">// [(1, 10), (2, 20), (3, 30)]</span>
+</code></pre>
+<h2 id="reduce">reduce()</h2>
+<p>&#x7D50;&#x69CB; : <code>reduce(operation:(acc:S,T)-&gt;S):S</code></p>
+<p>&#x5C0D;&#x96C6;&#x5408;&#x4E2D;&#x5143;&#x7D20;&#x505A;&#x7D2F;&#x8A08;&#x64CD;&#x4F5C;
+&#x7D2F;&#x8A08;&#x521D;&#x59CB;&#x5143;&#x7D20;&#x70BA;&#x96C6;&#x5408;&#x4E2D;&#x7B2C;&#x4E00;&#x500B;&#x5143;&#x7D20;
+&#x6BCF;&#x4E00;&#x6B21;&#x5C07;&#x8A08;&#x7B97;&#x7D50;&#x679C;&#x518D;&#x6B21;&#x5E36;&#x5165; <code>acc</code> &#x53C3;&#x6578;&#x4E26;&#x4EE5;&#x6B64;&#x8DCC;&#x4EE3;&#x503C;&#x5230;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x5143;&#x7D20;</p>
+<pre><code class="lang-kotlin">listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>).reduce { acc, n -&gt; acc - n } 
+<span class="hljs-comment">//&#x521D;&#x59CB; acc=1, n=2 &#x4E26;&#x5C07; 1-2 &#x7684;&#x7D50;&#x679C;&#x5E36;&#x5230;&#x4E0B;&#x4E00;&#x8F2A;&#x7684; acc</span>
+<span class="hljs-comment">// 1-2-3-4-5-6 = -19</span>
+
+listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>).reduce { acc, n -&gt; acc + n } <span class="hljs-comment">// 1+2+3+4+5+6=21</span>
+</code></pre>
+<h2 id="filter">filter()</h2>
+<p>&#x7D50;&#x69CB; : <code>filter(predicate:(T)-&gt;Boolean)List&lt;T&gt;</code></p>
+<p>&#x5C0D;&#x96C6;&#x5408;&#x4E2D;&#x5143;&#x7D20;&#x505A;&#x904E;&#x6FFE;&#xFF0C;&#x6700;&#x7D42;&#x96C6;&#x5408;&#x53EA;&#x6703;&#x6709;&#x7D93;&#x904E; <code>predicate</code> &#x904B;&#x7B97;&#x5F8C;&#x56DE;&#x50B3; <code>true</code> &#x7684;&#x5143;&#x7D20;</p>
+<pre><code class="lang-kotlin">listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>).filter { it % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> } <span class="hljs-comment">// [2,4]</span>
+</code></pre>
+<h2 id="foreach">forEach()</h2>
+<p>&#x7D50;&#x69CB; : <code>forEach(action:(T)-&gt;Unit):Unit</code></p>
+<p>&#x5C0D;&#x96C6;&#x5408;&#x5143;&#x7D20;&#x9032;&#x884C;&#x8F2A;&#x5DE1;&#x64CD;&#x4F5C;</p>
+<pre><code class="lang-kotlin">listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>).forEach { print(<span class="hljs-string">&quot;$it-&gt;&quot;</span>) } <span class="hljs-comment">//1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;</span>
+</code></pre>
+<h2 id="partition">partition()</h2>
+<p>&#x7D50;&#x69CB; : <code>partition(predicate:(T)-&gt;Boolean):Pair&lt;List&lt;T&gt;,List&lt;T&gt;&gt;</code></p>
+<p>&#x5C07;&#x8CC7;&#x6599;&#x4F9D;&#x7167; <code>predicate</code> &#x56DE;&#x50B3; <code>true</code> &#x548C; <code>false</code> &#x5206;&#x6210;&#x5169;&#x7FA4;&#xFF0C;&#x4E26;&#x6536;&#x96C6;&#x5230;&#x4E00;&#x500B; Pair &#x7269;&#x4EF6;&#x4E2D;</p>
+<p>Pair &#x7B2C;&#x4E00;&#x500B;&#x5143;&#x7D20;&#x8868;&#x793A; <code>predicate</code> &#x56DE;&#x50B3; <code>true</code> &#x7684;&#x5143;&#x7D20;&#x96C6;&#x5408; List
+Pair &#x7B2C;&#x4E00;&#x500B;&#x5143;&#x7D20;&#x8868;&#x793A; <code>predicate</code> &#x56DE;&#x50B3; <code>false</code> &#x7684;&#x5143;&#x7D20;&#x96C6;&#x5408; List</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> c</span> = listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>).partition { it % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> } <span class="hljs-comment">// ([2, 4], [1, 3, 5])</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="EXTENSION_DELEGATE.html" class="navigation navigation-prev " aria-label="Previous page: 擴展與代理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="EXCEPTION.html" class="navigation navigation-next " aria-label="Next page: 例外處理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"深入方法","level":"1.14","depth":1,"next":{"title":"例外處理","level":"1.15","depth":1,"path":"EXCEPTION.md","ref":"EXCEPTION.md","articles":[]},"previous":{"title":"擴展與代理","level":"1.13","depth":1,"path":"EXTENSION_DELEGATE.md","ref":"EXTENSION_DELEGATE.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Matthew","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin 學習筆記","gitbook":"3.2.3","description":"CSO Kotlin 研究報告"},"file":{"path":"DIVE_INTO_FUNCTION.md","mtime":"2021-11-10T06:35:39.924Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-11T05:39:36.005Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
