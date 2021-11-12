@@ -1,0 +1,668 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>物件與類別 · Kotlin 學習筆記</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Matthew">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CLASS.html" />
+    
+    
+    <link rel="prev" href="METHOD.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="BASIC.html">
+            
+                <a href="BASIC.html">
+            
+                    
+                    入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="OPERATOR.html">
+            
+                <a href="OPERATOR.html">
+            
+                    
+                    操作子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CONTROL_FLOW.html">
+            
+                <a href="CONTROL_FLOW.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="COLLECTION.html">
+            
+                <a href="COLLECTION.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="METHOD.html">
+            
+                <a href="METHOD.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="TYPE_AND_OBJECT.html">
+            
+                <a href="TYPE_AND_OBJECT.html">
+            
+                    
+                    物件與類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="CLASS.html">
+            
+                <a href="CLASS.html">
+            
+                    
+                    深入類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="IMPLEMENT.html">
+            
+                <a href="IMPLEMENT.html">
+            
+                    
+                    繼承、抽象、介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="PACKAGE.html">
+            
+                <a href="PACKAGE.html">
+            
+                    
+                    套件與存取修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="DEMO.html">
+            
+                <a href="DEMO.html">
+            
+                    
+                    程式示範
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="GENERIC.html">
+            
+                <a href="GENERIC.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="EXTENSION_DELEGATE.html">
+            
+                <a href="EXTENSION_DELEGATE.html">
+            
+                    
+                    擴展與代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="DIVE_INTO_FUNCTION.html">
+            
+                <a href="DIVE_INTO_FUNCTION.html">
+            
+                    
+                    深入方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="EXCEPTION.html">
+            
+                <a href="EXCEPTION.html">
+            
+                    
+                    例外處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="DSL.html">
+            
+                <a href="DSL.html">
+            
+                    
+                    DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >物件與類別</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x985E;&#x5225;-class">&#x985E;&#x5225; (Class)</h1>
+<p>&#x985E;&#x5225;&#x4EA6;&#x7A31; &quot;&#x578B;&#x5225;&quot; &#x6216; &quot;&#x985E;&#x578B;&quot;&#xFF0C;&#x63CF;&#x8FF0;&#x4E00;&#x7A2E;&#x8CC7;&#x6599;&#x7D50;&#x69CB;&#x7684;&#x6A23;&#x5B50;</p>
+<p>&#x7A0B;&#x5F0F;&#x4E2D;&#x770B;&#x5230;&#x82F1;&#x6587;&#x63CF;&#x8FF0; <code>Class</code>&#x3001;<code>Type</code> &#x90FD;&#x662F;&#x985E;&#x4F3C;&#x7684;&#x6982;&#x5FF5;</p>
+<p>&#x5BA3;&#x544A; :</p>
+<pre><code>[&#x5B58;&#x53D6;&#x7BC4;&#x570D;] class [&#x985E;&#x5225;&#x540D;&#x7A31;] {
+    // ... &#x5C6C;&#x6027;
+    // ... &#x65B9;&#x6CD5;
+}
+</code></pre><blockquote>
+<p>&#x5982;&#x679C;&#x4E00;&#x500B;&#x985E;&#x5225;&#x6C92;&#x6709;&#x5BE6;&#x9AD4;&#x5167;&#x5BB9;&#xFF0C;kotlin &#x5141;&#x8A31;&#x7701;&#x7565; <code>{}</code></p>
+</blockquote>
+<ul>
+<li>&#x5B58;&#x53D6;&#x7BC4;&#x570D; : <code>public</code>&#x3001;<code>internal</code>&#x3001;<code>private</code> &#x4E09;&#x7A2E;</li>
+</ul>
+<hr>
+<h1 id="&#x7269;&#x4EF6;-object">&#x7269;&#x4EF6; (Object)</h1>
+<p>&#x7269;&#x4EF6;&#x4EA6;&#x7A31; &quot;&#x5BE6;&#x4F8B;&quot;&#x3001;&quot;&#x5BE6;&#x9AD4;&quot;&#xFF0C;&#x662F;&#x6307;&#x7167;&#x8457;&#x985E;&#x5225;&#x63CF;&#x8FF0;&#x7684;&#x6A23;&#x5B50;&#x5275;&#x9020;&#x51FA;&#x4F86;&#x7684;&#x7269;&#x9AD4;
+&#x7A0B;&#x5F0F;&#x4E2D;&#x770B;&#x5230;&#x82F1;&#x6587;&#x63CF;&#x8FF0; Object&#x3001;Instance &#x90FD;&#x662F;&#x9019;&#x500B;&#x6982;&#x5FF5;</p>
+<p>&#x5728; java &#x4E2D;&#x9700;&#x8981;&#x900F;&#x904E; <code>new</code> &#x95DC;&#x9375;&#x5B57;&#x4F86;&#x5275;&#x5EFA;&#x7269;&#x4EF6;&#xFF0C;kotlin &#x4E2D;&#x53EF;&#x4EE5;&#x7701;&#x7565; <code>new</code> &#x95DC;&#x9375;&#x5B57;</p>
+<hr>
+<h1 id="&#x985E;&#x5225;&#x5EFA;&#x69CB;&#x5B50;-constructor">&#x985E;&#x5225;&#x5EFA;&#x69CB;&#x5B50; (constructor)</h1>
+<p>kotlin &#x4E2D;&#x985E;&#x5225;&#x5EFA;&#x69CB;&#x5B50;&#x5206;&#x70BA;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x53CA;&#x526F;&#x5EFA;&#x69CB;&#x5B50;</p>
+<h2 id="&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;">&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;</h2>
+<p>&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x7684;&#x5BA3;&#x544A;&#x7DCA;&#x8DDF;&#x5728;&#x985E;&#x5225;&#x5BA3;&#x544A;&#x4E4B;&#x5F8C;</p>
+<ul>
+<li><strong>&#x6240;&#x6709;&#x7269;&#x4EF6;&#x5728;&#x5275;&#x5EFA;&#x6642;&#xFF0C;&#x90FD;&#x5FC5;&#x9808;&#x4F7F;&#x7528;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x9032;&#x884C;&#x521D;&#x59CB;&#x5316;</strong></li>
+<li><strong>&#x4E00;&#x500B;&#x985E;&#x5225;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x500B;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;</strong></li>
+</ul>
+<p>&#x5BA3;&#x544A;&#x683C;&#x5F0F; :</p>
+<pre><code>class [&#x985E;&#x5225;&#x540D;&#x7A31;] [&#x5B58;&#x53D6;&#x7BC4;&#x570D;] constructor(&#x5C6C;&#x6027;&#x5217;&#x8868;) {}
+</code></pre><ul>
+<li><code>constructor</code> &#x95DC;&#x9375;&#x5B57; : &#x7576;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x524D;&#x4E0D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x5B58;&#x53D6;&#x7BC4;&#x570D;&#x5BA3;&#x544A;&#x6642;&#xFF0C;&#x6B64;&#x95DC;&#x9375;&#x5B57;&#x53EF;&#x4EE5;&#x7701;&#x7565;</li>
+<li>&#x5B58;&#x53D6;&#x7BC4;&#x570D; : &#x9810;&#x8A2D;&#x70BA; <code>public</code> (&#x53EF;&#x7701;&#x7565;)&#xFF0C;&#x4E26;&#x9084;&#x6709; <code>protected</code>&#x3001;<code>internal</code>&#x3001;<code>private</code> &#x5171;&#x56DB;&#x7A2E;</li>
+<li>&#x5C6C;&#x6027;&#x5217;&#x8868; : &#x5728;&#x9019;&#x88E1;&#x5BA3;&#x544A;&#x6B64;&#x985E;&#x5225;&#x6709;&#x54EA;&#x4E9B;&#x5C6C;&#x6027;&#xFF0C;&#x6B64;&#x8655;&#x5BA3;&#x544A;&#x7684;&#x5C6C;&#x6027;&#x5FC5;&#x9808;&#x52A0;&#x4E0A; <code>val</code> &#x6216; <code>var</code> &#x7684;&#x524D;&#x7DB4;&#xFF0C;&#x5982;&#x679C;&#x6C92;&#x6709;&#x52A0;&#x4E0A;&#x524D;&#x7DB4;&#xFF0C;&#x5247;&#x8A72;&#x53C3;&#x6578;&#x6703;&#x88AB;&#x7576;&#x6210;&#x5E38;&#x6578;&#x5B58;&#x5728;&#x65BC;&#x521D;&#x59CB;&#x5316;&#x5F8C;&#x7684;&#x7269;&#x4EF6;&#x4E2D;</li>
+</ul>
+<p>&#x7BC4;&#x4F8B;</p>
+<pre><code class="lang-kotlin"><span class="hljs-comment">// &#x57FA;&#x790E;&#x5BA3;&#x544A;&#x5F0F;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span></span>(<span class="hljs-variable"><span class="hljs-keyword">var</span> text</span>:String, <span class="hljs-variable"><span class="hljs-keyword">val</span> width</span>:<span class="hljs-keyword">Int</span>, <span class="hljs-variable"><span class="hljs-keyword">val</span> height</span>:<span class="hljs-keyword">Int</span>)
+
+<span class="hljs-comment">// &#x7D66;&#x5B9A;&#x53C3;&#x6578;&#x9810;&#x8A2D;&#x503C; -&gt; &#x5EFA;&#x69CB;&#x5B50;&#x591A;&#x8F09;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span></span>(<span class="hljs-variable"><span class="hljs-keyword">var</span> text</span>:String = <span class="hljs-string">&quot;Click&quot;</span>, <span class="hljs-variable"><span class="hljs-keyword">val</span> width</span>:<span class="hljs-keyword">Int</span>, <span class="hljs-variable"><span class="hljs-keyword">val</span> height</span>:<span class="hljs-keyword">Int</span>)
+</code></pre>
+<h3 id="&#x521D;&#x59CB;&#x5316;&#x5340;&#x584A;">&#x521D;&#x59CB;&#x5316;&#x5340;&#x584A;</h3>
+<p>kotlin &#x7684;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x6C92;&#x6709; java &#x4E2D;&#x7684;&#x5EFA;&#x69CB;&#x5BE6;&#x9AD4;&#x5340;&#x584A;&#xFF0C;&#x5C0D;&#x61C9;&#x7684;&#x662F;&#x63D0;&#x4F9B;&#x521D;&#x59CB;&#x5316;&#x5340;&#x584A;&#x4F86;&#x5BE6;&#x73FE;&#x76F8;&#x540C;&#x529F;&#x80FD;</p>
+<p>&#x4E0D;&#x4E00;&#x6A23;&#x7684;&#x662F;&#x4E00;&#x500B;&#x985E;&#x5225;&#x4E2D;&#x53EF;&#x4EE5;&#x64C1;&#x6709;&#x591A;&#x500B;&#x521D;&#x59CB;&#x5316;&#x5340;&#x584A;&#xFF0C;&#x9019;&#x4E9B;&#x521D;&#x59CB;&#x5316;&#x5340;&#x584A;&#x7684;&#x57F7;&#x884C;&#x9806;&#x5E8F;&#x70BA;&#x7531;&#x4E0A;&#x5F80;&#x4E0B;&#x4E00;&#x6B21;&#x57F7;&#x884C;</p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span></span>(<span class="hljs-variable"><span class="hljs-keyword">var</span> text</span>:String, <span class="hljs-variable"><span class="hljs-keyword">val</span> width</span>:<span class="hljs-keyword">Int</span>, <span class="hljs-variable"><span class="hljs-keyword">val</span> height</span>:<span class="hljs-keyword">Int</span>) {
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> area</span>:<span class="hljs-keyword">Int</span>
+    init {
+        area = width * height
+        println(<span class="hljs-string">&quot;&#x521D;&#x59CB;&#x5316;&#x5340;&#x584A; 1&quot;</span>)
+    }
+    init {
+        println(<span class="hljs-string">&quot;&#x521D;&#x59CB;&#x5316;&#x5340;&#x584A; 2&quot;</span>)
+    }
+}
+</code></pre>
+<h2 id="&#x526F;&#x5EFA;&#x69CB;&#x5B50;">&#x526F;&#x5EFA;&#x69CB;&#x5B50;</h2>
+<ul>
+<li>&#x526F;&#x5EFA;&#x69CB;&#x5B50;&#x7684;&#x4F5C;&#x7528;&#x5728;&#x65BC; <strong>&#x8F14;&#x52A9;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;</strong></li>
+<li>&#x6240;&#x4EE5; <strong>&#x6240;&#x6709;&#x7684;&#x526F;&#x5EFA;&#x69CB;&#x5B50;&#x6700;&#x7D42;&#x90FD;&#x5FC5;&#x9808;&#x547C;&#x53EB;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;</strong></li>
+<li>&#x5F62;&#x6210; <strong>&#x9593;&#x63A5;&#x547C;&#x53EB;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;==&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</strong></li>
+<li><strong>&#x526F;&#x5EFA;&#x69CB;&#x5B50;&#x53EF;&#x4EE5;&#x6709; 0 &#x500B;&#x6216;&#x591A;&#x500B;&#xFF0C;&#x4F46;&#x662F;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x500B;</strong></li>
+</ul>
+<p>&#x5BA3;&#x544A;&#x65B9;&#x5F0F; :</p>
+<pre><code>constructor(&#x53C3;&#x6578;&#x5217;&#x8868;1):this(&#x53C3;&#x6578;&#x5217;&#x8868;2) {}
+</code></pre><ul>
+<li>&#x53C3;&#x6578;&#x5217;&#x8868; 1 : &#x8868;&#x793A;&#x6B64;&#x526F;&#x5EFA;&#x69CB;&#x5B50;&#x7684;&#x53C3;&#x6578;&#x5217;&#x8868;</li>
+<li>&#x53C3;&#x6578;&#x5217;&#x8868; 2 : &#x8868;&#x793A;&#x547C;&#x53EB;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x6216;&#x5176;&#x4ED6;&#x526F;&#x5EFA;&#x69CB;&#x5B50;</li>
+</ul>
+<blockquote>
+<p>&#x526F;&#x5EFA;&#x69CB;&#x5B50;&#x7684;&#x53C3;&#x6578;&#x4E26;&#x4E0D;&#x662F;&#x5C6C;&#x6027;&#xFF0C;&#x53EA;&#x6709;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x624D;&#x80FD;&#x5B9A;&#x7FA9;&#x5C6C;&#x6027;&#xFF0C;&#x526F;&#x5EFA;&#x69CB;&#x5B50;&#x53EA;&#x662F;&#x8F14;&#x52A9;&#xFF0C;&#x4E26;&#x4E0D;&#x6703;&#x7522;&#x751F;&#x7269;&#x4EF6;
+&#x4F7F;&#x7528;&#x526F;&#x5EFA;&#x69CB;&#x5B50;&#x5275;&#x5EFA;&#x6700;&#x7D42;&#x9084;&#x662F;&#x9760;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x4F86;&#x7522;&#x751F;&#x7269;&#x4EF6;</p>
+</blockquote>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span></span>(<span class="hljs-variable"><span class="hljs-keyword">var</span> text</span>:String, <span class="hljs-variable"><span class="hljs-keyword">val</span> width</span>:<span class="hljs-keyword">Int</span>, <span class="hljs-variable"><span class="hljs-keyword">val</span> height</span>:<span class="hljs-keyword">Int</span>) {
+    <span class="hljs-comment">// &#x526F;&#x5EFA;&#x69CB;&#x5B50; 1 &#x547C;&#x53EB;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;</span>
+    constructor(text:String):this(text,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>) {} 
+
+    <span class="hljs-comment">// &#x526F;&#x5EFA;&#x69CB;&#x5B50; 2 &#x547C;&#x53EB;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;</span>
+    constructor(width:<span class="hljs-keyword">Int</span>, height:<span class="hljs-keyword">Int</span>):this(<span class="hljs-string">&quot;&quot;</span>,width,height) {} 
+
+    <span class="hljs-comment">// &#x526F;&#x5EFA;&#x69CB;&#x5B50; 3 &#x547C;&#x53EB; &#x526F;&#x5EFA;&#x69CB;&#x5B50; 1</span>
+    constructor():this(<span class="hljs-string">&quot;Default&quot;</span>) 
+}
+</code></pre>
+<hr>
+<h1 id="&#x5C6C;&#x6027;">&#x5C6C;&#x6027;</h1>
+<p>&#x4F86;&#x6DF1;&#x5165;&#x601D;&#x8003;&#x4E00;&#x4E0B;&#x5C6C;&#x6027;&#x662F;&#x4EC0;&#x9EBC;</p>
+<p>&#x5728; JavaBean &#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x4E00;&#x822C;&#x4E0D;&#x6703;&#x56B4;&#x683C;&#x5340;&#x5206;&#x6210;&#x54E1;&#x548C;&#x5C6C;&#x6027;&#x7684;&#x5DEE;&#x5225;&#xFF0C;&#x610F;&#x601D;&#x662F;</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> </span>{
+    <span class="hljs-keyword">private</span> String _alias_;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getName</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> _alias_;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setName</span><span class="hljs-params">(String name)</span> </span>{
+        _alias_ = name;
+    }
+}
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x8FF0;&#x7BC4;&#x4F8B;&#x4E2D; <code>_alias_</code> &#x662F;&#x985E;&#x5225;&#x6210;&#x54E1;&#xFF0C;
+&#x4F46;&#x662F;&#x5C0D;&#x65BC;&#x9019;&#x500B;&#x985E;&#x5225;&#x7684;&#x7269;&#x4EF6;&#x4F86;&#x8AAA;&#xFF0C;&#x80FD;&#x5920;&#x64CD;&#x4F5C;&#x7684;&#x5C6C;&#x6027;&#x662F; <code>name</code>
+&#x800C;&#x5C6C;&#x6027; <code>name</code> &#x5C0D;&#x61C9;&#x7684;&#x8A2A;&#x554F;&#x5668; (getter/setter) &#x5C31;&#x662F; <code>getName</code> &#x548C; <code>setName</code> &#x65B9;&#x6CD5;</p>
+<p>&#x6703;&#x7279;&#x5225;&#x628A;&#x9019;&#x4EF6;&#x4E8B;&#x63D0;&#x51FA;&#x4F86;&#x662F;&#x56E0;&#x70BA;&#x5728; kotlin &#x4E2D;&#x958B;&#x767C;&#x8005;&#x53EA;&#x80FD;&#x5B9A;&#x7FA9;&#x5C6C;&#x6027;&#xFF0C;&#x4E0D;&#x80FD;&#x5B9A;&#x7FA9;&#x6210;&#x54E1;</p>
+<blockquote>
+<p>&#x7531;&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x4E8B;&#x5BE6;&#x4E0A;&#x6211;&#x5011;&#x4E26;&#x4E0D;&#x5728;&#x610F;&#x771F;&#x6B63;&#x6210;&#x54E1;&#x53EB;&#x4EC0;&#x9EBC;&#x540D;&#x5B57;&#xFF0C;&#x5C0D;&#x65BC;&#x7269;&#x4EF6;&#x4F86;&#x8AAA;&#xFF0C;&#x5C6C;&#x6027;&#x624D;&#x662F;&#x64CD;&#x4F5C;&#x76EE;&#x6A19;</p>
+</blockquote>
+<p>&#x5728; kotlin &#x4E2D; <strong>&#x6BCF;&#x4E00;&#x500B;&#x5C6C;&#x6027;&#x90FD;&#x6703;&#x81EA;&#x52D5;&#x5275;&#x5EFA;&#x9810;&#x8A2D;&#x7684;&#x8A2A;&#x554F;&#x5668;</strong>
+&#x67D0;&#x4E9B;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x7FA9;&#x5C6C;&#x6027;&#x7684;&#x8A2A;&#x554F;&#x5668; :</p>
+<ul>
+<li>getter &#x548C; setter &#x5FC5;&#x9808;&#x7DCA;&#x8DDF;&#x5728;&#x5C6C;&#x6027;&#x540D;&#x7A31;&#x5F8C;&#x9762;</li>
+<li>getter &#x548C; setter &#x6C92;&#x6709;&#x5148;&#x5F8C;&#x9806;&#x5E8F;&#x7684;&#x8981;&#x6C42;</li>
+<li>getter &#x9700;&#x8981;&#x56DE;&#x50B3;&#x5C6C;&#x6027;&#x503C;</li>
+<li>setter &#x6703;&#x5305;&#x542B;&#x4E00;&#x500B;&#x53C3;&#x6578;&#xFF0C;&#x8A72;&#x53C3;&#x6578;&#x7528;&#x4F86;&#x4FDD;&#x5B58;&#x50B3;&#x905E;&#x904E;&#x4F86;&#x7684;&#x5F15;&#x6578;</li>
+</ul>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Computer</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> disk</span>:<span class="hljs-keyword">Int</span>) {
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> availableSpace</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> usedSpace</span>:<span class="hljs-keyword">Int</span>
+        <span class="hljs-keyword">get</span>() {
+            <span class="hljs-keyword">return</span> disk - availableSpace
+        }
+        <span class="hljs-keyword">set</span>(value) {
+            availableSpace -= value
+        }
+}
+</code></pre>
+<p>&#x8B93;&#x6211;&#x5011;&#x601D;&#x8003;&#x4E00;&#x4E0B;&#x9019;&#x6BB5;&#x7A0B;&#x5F0F;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">var</span> price</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">set</span>(value) {
+        <span class="hljs-keyword">if</span> (value <span class="hljs-type">&lt; 0) {
+            price = 0
+        } else {
+            price = value
+        }
+    }
+</span></code></pre>
+<p>&#x50F9;&#x683C;&#x4E0D;&#x80FD;&#x5C0F;&#x65BC;&#x96F6;&#xFF0C;&#x770B;&#x8D77;&#x4F86;&#x5F88;&#x6B63;&#x5E38;&#xFF0C;&#x554F;&#x984C;&#x5728;&#x54EA;?</p>
+<p>&#x7576;&#x547C;&#x53EB; <code>price = 0</code> &#x7684;&#x6642;&#x5019;&#xFF0C;stack &#x5C31;&#x7206;&#x4E86;&#xFF0C;why? &#x601D;&#x8003;&#x4E00;&#x4E0B;</p>
+<pre><code>&#x8A2D;&#x5B9A; `price = 0` -&gt; &#x547C;&#x53EB; `price` &#x7684; `set` &#x65B9;&#x6CD5; -&gt; 
+&#x5224;&#x65B7; `value` &#x6C92;&#x6709;&#x5C0F;&#x65BC;&#x96F6; -&gt; &#x57F7;&#x884C; `else` &#x5340;&#x584A; -&gt; 
+&#x8A2D;&#x5B9A; `price = 0` -&gt; &#x56DE;&#x5230;&#x4E00;&#x958B;&#x59CB;
+</code></pre><p>&#x770B;&#x51FA;&#x4F86;&#x4E86;&#x55CE;? &#x9019;&#x6A23;&#x7684;&#x547C;&#x53EB;&#x6703;&#x50CF;&#x7121;&#x9650;&#x905E;&#x8FF4;&#x4E00;&#x6A23;&#x7684;&#x547C;&#x53EB;&#xFF0C;&#x76F4;&#x5230; stack &#x8A18;&#x61B6;&#x9AD4;&#x88AB; function call stack &#x586B;&#x6EFF;&#x5674;&#x51FA; stackoverflow</p>
+<h3 id="&#x96B1;&#x85CF;&#x6210;&#x54E1;">&#x96B1;&#x85CF;&#x6210;&#x54E1;</h3>
+<p>&#x8981;&#x5728; setter &#x4E2D;&#x4FEE;&#x6539;&#x771F;&#x6B63;&#x7684;&#x6210;&#x54E1;&#x503C;&#x800C;&#x4E0D;&#x662F;&#x518D;&#x6B21;&#x4F7F;&#x7528; setter &#x65B9;&#x6CD5;&#x4F86;&#x8CE6;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x547C;&#x53EB;&#x96B1;&#x85CF;&#x53C3;&#x6578; <code>field</code>&#xFF0C;&#x8A2D;&#x5B9A;&#x4E86; <code>field</code> &#x53C3;&#x6578;&#x503C;&#x7B49;&#x65BC;&#x8A2D;&#x5B9A;&#x4E86;&#x8A72;&#x5C6C;&#x6027;&#x80CC;&#x5F8C;&#x7684;&#x6210;&#x54E1;&#x8B8A;&#x6578;&#x503C;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">var</span> price</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+ <span class="hljs-keyword">set</span>(value) {
+   <span class="hljs-keyword">if</span> (value <span class="hljs-type">&lt; 0) {
+     field = 0
+   } else {
+     field = value
+   }
+ }
+</span></code></pre>
+<p>&#x9019;&#x6A23;&#x5C31;&#x4E0D;&#x6703;&#x9020;&#x6210;&#x7121;&#x9650;&#x905E;&#x8FF4;&#x547C;&#x53EB;&#x7684;&#x72C0;&#x6CC1;&#xFF0C;&#x56E0;&#x70BA;&#x8A2D;&#x5B9A;&#x4E0D;&#x662F; price &#x9019;&#x500B;&#x5C6C;&#x6027;&#xFF0C;&#x800C;&#x662F;&#x6B64;&#x5C6C;&#x6027;&#x7684;&#x96B1;&#x85CF;&#x6210;&#x54E1;</p>
+<h2 id="&#x5167;&#x806F;&#x5C6C;&#x6027;">&#x5167;&#x806F;&#x5C6C;&#x6027;</h2>
+<p>&#x95DC;&#x9375;&#x5B57; <code>inline</code> &#x5BA3;&#x544A;&#x7684;&#x5C6C;&#x6027;&#x4E0D;&#x6703;&#x6709;&#x96B1;&#x85CF;&#x6210;&#x54E1;&#xFF0C;&#x9019;&#x4E5F;&#x8868;&#x793A;&#x958B;&#x767C;&#x8005;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x53BB;&#x5BE6;&#x73FE;&#x90A3;&#x500B;&#x96B1;&#x85CF;&#x6210;&#x54E1;&#x7684;&#x52D5;&#x4F5C;&#xFF0C;&#x5C31;&#x50CF;&#x4E0A;&#x8FF0; java &#x7BC4;&#x4F8B;&#x90A3;&#x6A23;</p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span> </span>{
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> _alias_</span> = <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-keyword">inline</span> <span class="hljs-variable"><span class="hljs-keyword">var</span> username</span>:String
+        <span class="hljs-keyword">get</span>() = _alias_
+        <span class="hljs-keyword">set</span>(value) {
+            this._alias_ = value
+        }
+}
+</code></pre>
+<h2 id="&#x5EF6;&#x9072;&#x521D;&#x59CB;&#x5316;&#x5C6C;&#x6027;">&#x5EF6;&#x9072;&#x521D;&#x59CB;&#x5316;&#x5C6C;&#x6027;</h2>
+<p>&#x5728; Kotlin &#x4E2D;&#xFF0C;&#x985E;&#x5225;&#x5B9A;&#x7FA9;&#x7684;&#x6240;&#x6709;&#x5C6C;&#x6027;&#x90FD;&#x5FC5;&#x9808;&#x660E;&#x986F;&#x7684;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x9019;&#x500B;&#x898F;&#x5B9A;&#x53EF;&#x4EE5;&#x63D0;&#x9192;&#x958B;&#x6CD5;&#x8005;&#x53CA;&#x6642;&#x6CE8;&#x610F;&#x5C6C;&#x6027;&#x662F;&#x5426;&#x6709;&#x6B63;&#x78BA;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4F46;&#x67D0;&#x4E9B;&#x6642;&#x5019;&#x6703;&#x9020;&#x6210;&#x958B;&#x767C;&#x8005;&#x5FC5;&#x9808;&#x591A;&#x5BEB;&#x4E00;&#x4E9B;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x4F8B;&#x5982;&#x5FC5;&#x9808;&#x8981;&#x5EF6;&#x9072;&#x521D;&#x59CB;&#x5316;&#x7684;&#x5C6C;&#x6027;&#xFF0C;&#x5728;&#x5275;&#x5EFA;&#x7269;&#x4EF6;&#x6642;&#x4E0D;&#x6703;&#x5E36;&#x5165;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#xFF0C;&#x5C31;&#x5FC5;&#x9808;&#x5BA3;&#x544A;&#x70BA;&#x53EF;&#x7A7A; (Optional -&gt; <code>?</code>)&#xFF0C;&#x4E00;&#x65E6;&#x5BA3;&#x544A;&#x70BA;&#x53EF;&#x7A7A;&#xFF0C;&#x4E4B;&#x5F8C;&#x5C0D;&#x65BC;&#x5C6C;&#x6027;&#x7684;&#x64CD;&#x4F5C;&#x5C31;&#x5FC5;&#x9808;&#x505A;&#x975E;&#x7A7A;&#x8655;&#x7406;</p>
+<p>&#x4F8B;&#x5982; Android&#xFF0C;&#x5C6C;&#x6027;&#x5FC5;&#x9808;&#x5728; <code>onCreate</code> &#x5F8C;&#x624D;&#x6703;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E4B;&#x524D;&#x90FD;&#x662F;&#x7A7A;</p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeActivity</span>:<span class="hljs-type">Activity {</span></span>
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> txtTitle</span>:TextView? = <span class="hljs-literal">null</span>
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState:<span class="hljs-type">Bundle?</span>)</span> {</span>
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_some)
+
+        txtTitle = findViewById(R.id.title)
+
+        txtTitle!!.text = <span class="hljs-string">&quot;&#x624B;&#x52D5;&#x5F37;&#x5236;&#x975E;&#x7A7A;&#x8CE6;&#x503C;&quot;</span>
+    }
+}
+</code></pre>
+<p>Kotlin &#x6709;&#x63D0;&#x4F9B; <code>lateinit</code> &#x95DC;&#x9375;&#x5B57;&#x4F86;&#x8072;&#x660E;&#x5C6C;&#x6027;&#x4E00;&#x5B9A;&#x6703;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x53EA;&#x662F;&#x6703;&#x5EF6;&#x9072;&#xFF0C;&#x9019;&#x7A2E;&#x5C6C;&#x6027;&#x6709;&#x5E7E;&#x500B;&#x9650;&#x5236; :</p>
+<ul>
+<li>&#x5C6C;&#x6027;&#x5FC5;&#x9808;&#x662F;&#x5728;&#x985E;&#x5225;&#x4E2D;&#x7684;&#x6210;&#x54E1;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x4E3B;&#x5EFA;&#x69CB;&#x5B50;&#x4E2D;&#x5BA3;&#x544A;</li>
+<li>&#x5C6C;&#x6027;&#x5FC5;&#x9808;&#x4F7F;&#x7528;&#x9810;&#x8A2D;&#x7684;&#x8A2A;&#x554F;&#x5668;&#xFF0C;&#x4E0D;&#x652F;&#x63F4;&#x81EA;&#x5B9A;&#x7FA9;&#x8A2A;&#x554F;&#x5668;</li>
+<li>&#x5C6C;&#x6027;&#x5FC5;&#x9808;&#x5BA3;&#x544A;&#x70BA; <code>var</code></li>
+<li>&#x5C6C;&#x6027;&#x5FC5;&#x9808;&#x5BA3;&#x544A;&#x70BA;&#x975E;&#x7A7A;</li>
+<li>&#x5C6C;&#x6027;&#x5FC5;&#x9808;&#x975E;&#x57FA;&#x672C;&#x6578;&#x64DA;&#x985E;&#x578B;</li>
+</ul>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeActivity</span>:<span class="hljs-type">Activity {</span></span>
+    lateinit <span class="hljs-variable"><span class="hljs-keyword">var</span> txtTitle</span>:TextView
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(&#x7565;)</span> {</span>
+        txtTitle = findViewById(R.id.title)
+        txtTitle.text = <span class="hljs-string">&quot;&#x5C6C;&#x6027;&#x70BA;&#x975E;&#x7A7A;&#xFF0C;&#x7121;&#x9808;&#x5F37;&#x8F49;&quot;</span>
+    }
+}
+</code></pre>
+<hr>
+<h1 id="&#x985E;&#x5225;&#x65B9;&#x6CD5;">&#x985E;&#x5225;&#x65B9;&#x6CD5;</h1>
+<p>&#x6709;&#x4E9B;&#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;&#x5FC5;&#x9808;&#x642D;&#x914D;&#x985E;&#x5225;</p>
+<h2 id="infix">infix</h2>
+<p>infix &#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x7A2E; <strong>&#x82E5;&#x4E14;&#x70BA;&#x82E5;&#x53EA;&#x6709;&#x4E00;&#x500B;&#x53C3;&#x6578;</strong> &#x7684;&#x65B9;&#x6CD5;
+&#x6548;&#x679C;&#x662F;&#x53EF;&#x4EE5;&#x50CF; <strong>&#x4E8C;&#x5143;&#x64CD;&#x4F5C;&#x5B50;</strong> &#x90A3;&#x6A23;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeamMember</span> </span>{
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> point</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+    infix <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">addPoint</span><span class="hljs-params">(p:<span class="hljs-type">Int</span>)</span> {</span>
+        this.point += p
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> student</span> = Student()
+    student addPoint <span class="hljs-number">2</span> <span class="hljs-comment">// &#x4E8C;&#x5143;&#x64CD;&#x4F5C;&#x65B9;&#x5F0F;</span>
+    println(student.point) <span class="hljs-comment">// 2</span>
+}
+</code></pre>
+<h2 id="componentn">componentN</h2>
+<p>&#x662F; <code>operator</code> &#x65B9;&#x6CD5;&#x7684;&#x4E00;&#x7A2E;&#x7279;&#x5225;&#x4FEE;&#x98FE;&#x5B57;
+&#x4EE5; <code>component</code> &#x958B;&#x982D;&#x4E26;&#x4E14;&#x4EE5;&#x81EA;&#x7136;&#x6578;&#x70BA;&#x7D50;&#x5C3E;&#x547D;&#x540D;&#x7684;&#x65B9;&#x6CD5;
+&#x6B64;&#x985E;&#x65B9;&#x6CD5;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x53C3;&#x6578;&#xFF0C;&#x5176;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x5F9E;&#x7269;&#x4EF6;&#x4E2D;&#x63D0;&#x53D6;&#x5C0D;&#x61C9;&#x7684;&#x5C6C;&#x6027;&#x503C;
+<strong>&#x5E38;&#x7528;&#x65BC;&#x7269;&#x4EF6;&#x7684;&#x89E3;&#x69CB;&#x5F0F;&#x4E2D;</strong></p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> name</span>:String) {
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> height</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+    <span class="hljs-variable"><span class="hljs-keyword">var</span> weight</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+
+    operator <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">component1</span><span class="hljs-params">()</span>:String = name</span>
+
+    operator <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">component2</span><span class="hljs-params">()</span>:<span class="hljs-keyword">Int</span> = height</span>
+
+    operator <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">component3</span><span class="hljs-params">()</span>:<span class="hljs-keyword">Int</span> = weight</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> peter</span> = Student(<span class="hljs-string">&quot;Peter&quot;</span>)
+    peter.height = <span class="hljs-number">180</span>
+    peter.weight = <span class="hljs-number">70</span>
+    println(peter.component1()) <span class="hljs-comment">// &quot;Peter&quot;</span>
+    println(peter.component2()) <span class="hljs-comment">// 180</span>
+
+    <span class="hljs-comment">// &#x89E3;&#x69CB;&#x5F0F;</span>
+
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> (name, height, weight)</span> = peter <span class="hljs-comment">// &#x4F9D;&#x7167;&#x4F4D;&#x7F6E;&#x89E3;&#x69CB;</span>
+    println(name) <span class="hljs-comment">// &quot;Peter&quot;</span>
+    println(height) <span class="hljs-comment">// 180</span>
+    println(weight) <span class="hljs-comment">// 70</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="METHOD.html" class="navigation navigation-prev " aria-label="Previous page: 方法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CLASS.html" class="navigation navigation-next " aria-label="Next page: 深入類別">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"物件與類別","level":"1.7","depth":1,"next":{"title":"深入類別","level":"1.8","depth":1,"path":"CLASS.md","ref":"CLASS.md","articles":[]},"previous":{"title":"方法","level":"1.6","depth":1,"path":"METHOD.md","ref":"METHOD.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Matthew","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin 學習筆記","gitbook":"3.2.3","description":"CSO Kotlin 研究報告"},"file":{"path":"TYPE_AND_OBJECT.md","mtime":"2021-11-12T06:25:53.075Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-12T06:30:59.738Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

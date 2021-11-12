@@ -1,0 +1,553 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>繼承、抽象、介面 · Kotlin 學習筆記</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Matthew">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PACKAGE.html" />
+    
+    
+    <link rel="prev" href="CLASS.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="BASIC.html">
+            
+                <a href="BASIC.html">
+            
+                    
+                    入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="OPERATOR.html">
+            
+                <a href="OPERATOR.html">
+            
+                    
+                    操作子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CONTROL_FLOW.html">
+            
+                <a href="CONTROL_FLOW.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="COLLECTION.html">
+            
+                <a href="COLLECTION.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="METHOD.html">
+            
+                <a href="METHOD.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="TYPE_AND_OBJECT.html">
+            
+                <a href="TYPE_AND_OBJECT.html">
+            
+                    
+                    物件與類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="CLASS.html">
+            
+                <a href="CLASS.html">
+            
+                    
+                    深入類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="IMPLEMENT.html">
+            
+                <a href="IMPLEMENT.html">
+            
+                    
+                    繼承、抽象、介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="PACKAGE.html">
+            
+                <a href="PACKAGE.html">
+            
+                    
+                    套件與存取修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="DEMO.html">
+            
+                <a href="DEMO.html">
+            
+                    
+                    程式示範
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="GENERIC.html">
+            
+                <a href="GENERIC.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="EXTENSION_DELEGATE.html">
+            
+                <a href="EXTENSION_DELEGATE.html">
+            
+                    
+                    擴展與代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="DIVE_INTO_FUNCTION.html">
+            
+                <a href="DIVE_INTO_FUNCTION.html">
+            
+                    
+                    深入方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="EXCEPTION.html">
+            
+                <a href="EXCEPTION.html">
+            
+                    
+                    例外處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="DSL.html">
+            
+                <a href="DSL.html">
+            
+                    
+                    DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >繼承、抽象、介面</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7E7C;&#x627F;">&#x7E7C;&#x627F;</h1>
+<p>Kotlin &#x4E2D;&#x9810;&#x8A2D;&#x6240;&#x6709;&#x985E;&#x5225;&#x90FD;&#x6703;&#x88AB;&#x51A0;&#x4E0A; <code>final</code> &#x7684;&#x95DC;&#x9375;&#x5B57;&#x4EE5;&#x5F8C;&#x7DE8;&#x8B6F;&#x6210; class &#x6A94;
+&#x6240;&#x4EE5;&#x5982;&#x679C;&#x8981;&#x628A;&#x985E;&#x5225;&#x958B;&#x653E;&#x7D66;&#x5176;&#x4ED6;&#x985E;&#x5225;&#x7E7C;&#x627F;&#xFF0C;&#x8981;&#x5728;&#x985E;&#x5225;&#x5BA3;&#x544A;&#x524D;&#x52A0;&#x4E0A; <code>open</code> &#x4FEE;&#x98FE;&#x5B50;
+&#x540C;&#x6A23;&#x7684;&#x908F;&#x8F2F;&#x4E5F;&#x7528;&#x65BC;&#x65B9;&#x6CD5;&#x548C;&#x5C6C;&#x6027;&#xFF0C;&#x9810;&#x8A2D;&#x90FD;&#x662F; <code>final</code>&#xFF0C;&#x5982;&#x679C;&#x8981;&#x958B;&#x653E;&#x5247;&#x8981;&#x589E;&#x52A0; <code>open</code> &#x4FEE;&#x98FE;&#x5B50;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x8981;&#x7E7C;&#x627F;&#x67D0;&#x500B;&#x985E;&#x5225;&#xFF0C;&#x8981;&#x5728;&#x985E;&#x5225;&#x5BA3;&#x544A;&#x6700;&#x5F8C;&#x65B9;&#x52A0;&#x4E0A;&#x5192;&#x865F; <code>:</code> &#x4E26;&#x6307;&#x5B9A;&#x8981;&#x7E7C;&#x627F;&#x7684;&#x985E;&#x5225;</li>
+</ul>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">open</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Super</span> </span>{}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Sub</span>:<span class="hljs-type">Super {}</span></span>
+</code></pre>
+<blockquote>
+<p>Kotlin &#x4E2D;&#x53EA;&#x80FD;&#x7E7C;&#x627F;&#x4E00;&#x500B;&#x985E;&#x5225; (&#x548C; Java &#x76F8;&#x540C;)</p>
+</blockquote>
+<ul>
+<li>&#x5982;&#x679C;&#x7236;&#x985E;&#x5225;&#x6709;&#x81EA;&#x5B9A;&#x7FA9;&#x5EFA;&#x69CB;&#x5B50;&#xFF0C;&#x90A3;&#x5B50;&#x985E;&#x5225;&#x5BA3;&#x544A;&#x6642;&#x4E5F;&#x8981;&#x6307;&#x5B9A;&#x4F7F;&#x7528;&#x7236;&#x985E;&#x5225;&#x7684;&#x54EA;&#x4E00;&#x500B;&#x5EFA;&#x69CB;&#x5B50;
+  &#x5B50;&#x985E;&#x5225;&#x5EFA;&#x69CB;&#x5B50;&#x4E2D;&#x7684;&#x5C6C;&#x6027;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x5BA3;&#x544A; <code>val</code> &#x6216; <code>var</code></li>
+</ul>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">open</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Super</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> name</span>:String = <span class="hljs-string">&quot;&quot;</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Sub</span></span>(n:String):Super(n)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Sub2</span>:<span class="hljs-type">Super</span></span>() <span class="hljs-comment">// &#x56E0;&#x70BA;&#x7236;&#x985E;&#x5225; name &#x5C6C;&#x6027;&#x6709;&#x7D66;&#x9810;&#x8A2D;&#xFF0C;&#x53EF;&#x4EE5;&#x547C;&#x53EB;&#x7121;&#x53C3;&#x6578;&#x5EFA;&#x69CB;&#x5B50;</span>
+</code></pre>
+<ul>
+<li>&#x900F;&#x904E;&#x5EFA;&#x69CB;&#x5B50;&#x5BE6;&#x73FE;&#x7E7C;&#x627F;<pre><code class="lang-kotlin">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Sub3</span>:<span class="hljs-type">Super {  </span></span>
+      constructor(n:String) : super(n)  
+  }
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x8986;&#x5BEB;&#x5C6C;&#x6027;">&#x8986;&#x5BEB;&#x5C6C;&#x6027;</h2>
+<p>&#x8986;&#x5BEB;&#x5C6C;&#x6027;&#x53EF;&#x4EE5;&#x628A;&#x5C6C;&#x6027;&#x5F9E; <code>var</code> &#x8986;&#x5BEB;&#x70BA; <code>val</code>&#xFF0C;&#x4F46;&#x662F;&#x53CD;&#x904E;&#x4F86;&#x4E0D;&#x884C;</p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">open</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">View</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> width</span>:<span class="hljs-keyword">Int</span>, <span class="hljs-variable"><span class="hljs-keyword">val</span> height</span>:<span class="hljs-keyword">Int</span>) {
+    <span class="hljs-keyword">open</span> <span class="hljs-variable"><span class="hljs-keyword">var</span> size</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmallView</span></span>(width:<span class="hljs-keyword">Int</span>, height:<span class="hljs-keyword">Int</span>):View(width, height) {
+    <span class="hljs-keyword">override</span> <span class="hljs-variable"><span class="hljs-keyword">var</span> size</span>:<span class="hljs-keyword">Int</span> = width * height
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">largeView</span></span>(width:<span class="hljs-keyword">Int</span>, height:<span class="hljs-keyword">Int</span>):View(width, height) {
+    <span class="hljs-keyword">override</span> <span class="hljs-variable"><span class="hljs-keyword">var</span> size</span>:<span class="hljs-keyword">Int</span> = width * height
+        <span class="hljs-keyword">get</span>() = width * width <span class="hljs-comment">// &#x5BA3;&#x544A;&#x53EA;&#x6709; get()&#xFF0C;&#x8868;&#x793A;&#x6B64;&#x5C6C;&#x6027;&#x5F9E; var &#x8B8A;&#x6210; val &#x552F;&#x6BD2;</span>
+}
+</code></pre>
+<h3 id="&#x5167;&#x90E8;&#x985E;&#x8A2A;&#x554F;&#x7236;&#x985E;&#x5225;">&#x5167;&#x90E8;&#x985E;&#x8A2A;&#x554F;&#x7236;&#x985E;&#x5225;</h3>
+<p>&#x5B50;&#x985E;&#x5225;&#x7684;&#x5167;&#x90E8;&#x985E;&#x5225;&#x8981;&#x8A2A;&#x554F;&#x5916;&#x90E8;&#x985E;&#x5225;&#x7684;&#x7236;&#x985E;&#x5225;&#x5C6C;&#x6027;&#xFF0C;&#x8981;&#x4F7F;&#x7528; <code>super@&#x5916;&#x90E8;&#x985E;&#x5225;.&#x7236;&#x985E;&#x5225;&#x5C6C;&#x6027;</code></p>
+<pre><code class="lang-kotlin"><span class="hljs-keyword">open</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">View</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> width</span>:<span class="hljs-keyword">Int</span>, <span class="hljs-variable"><span class="hljs-keyword">val</span> height</span>:<span class="hljs-keyword">Int</span>) {
+    <span class="hljs-keyword">open</span> <span class="hljs-variable"><span class="hljs-keyword">var</span> size</span>:<span class="hljs-keyword">Int</span> = <span class="hljs-number">0</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SmallView</span></span>(width:<span class="hljs-keyword">Int</span>, height:<span class="hljs-keyword">Int</span>):View(width,height) {
+    <span class="hljs-keyword">override</span> <span class="hljs-variable"><span class="hljs-keyword">var</span> size</span>:<span class="hljs-keyword">Int</span> = width * height
+
+    inner <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Painter</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">sizeInOuterClass</span><span class="hljs-params">()</span>:<span class="hljs-keyword">Int</span> = size <span class="hljs-comment">// &#x62FF;&#x5230;&#x7684;&#x6703;&#x662F; SmallView &#x7684; size</span></span>
+        <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">sizeInSuperClass</span><span class="hljs-params">()</span>:<span class="hljs-keyword">Int</span> = super@SmallView.size</span>
+    }
+}
+</code></pre>
+<hr>
+<h1 id="&#x62BD;&#x8C61;&#x985E;&#x5225;">&#x62BD;&#x8C61;&#x985E;&#x5225;</h1>
+<p>&#x4FEE;&#x98FE;&#x5B50; : <code>abstract</code></p>
+<p>&#x7D44;&#x6210; :</p>
+<ul>
+<li>&#x62BD;&#x8C61;&#x5C6C;&#x6027;</li>
+<li>&#x62BD;&#x8C61;&#x65B9;&#x6CD5;</li>
+<li>&#x5BE6;&#x9AD4;&#x5C6C;&#x6027;</li>
+<li>&#x5BE6;&#x9AD4;&#x65B9;&#x6CD5;</li>
+</ul>
+<h2 id="&#x7E7C;&#x627F;&#x898F;&#x5247;">&#x7E7C;&#x627F;&#x898F;&#x5247;</h2>
+<ul>
+<li>&#x5982;&#x679C;&#x5BE6;&#x9AD4;&#x985E;&#x5225;&#x7E7C;&#x627F;&#x62BD;&#x8C61;&#x985E;&#x5225;&#xFF0C;&#x5BE6;&#x9AD4;&#x985E;&#x5225;&#x5FC5;&#x9808;&#x5BE6;&#x73FE;&#x6240;&#x6709;&#x62BD;&#x8C61;&#x985E;&#x5225;&#x7684;&#x5C6C;&#x6027;&#x548C;&#x65B9;&#x6CD5;</li>
+<li>&#x5982;&#x679C;&#x62BD;&#x8C61;&#x985E;&#x5225;&#x7E7C;&#x627F;&#x62BD;&#x8C61;&#x985E;&#x5225;&#xFF0C;&#x5247;&#x53EF;&#x4EE5;&#x9078;&#x64C7;&#x60F3;&#x8981;&#x5BE6;&#x73FE;&#x7684;&#x5C6C;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x90FD;&#x4E0D;&#x8981;</li>
+</ul>
+<hr>
+<h1 id="&#x4ECB;&#x9762;">&#x4ECB;&#x9762;</h1>
+<p>&#x95DC;&#x9375;&#x5B57; : <code>interface</code></p>
+<p>&#x7D44;&#x6210; :</p>
+<ul>
+<li>&#x5BE6;&#x9AD4;&#x65B9;&#x6CD5;</li>
+<li>&#x62BD;&#x8C61;&#x65B9;&#x6CD5;</li>
+<li>&#x62BD;&#x8C61;&#x5C6C;&#x6027;<ul>
+<li>&#x8072;&#x660E;&#x5C6C;&#x6027;&#x800C;&#x4E0D;&#x9032;&#x884C;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;</li>
+<li>&#x8072;&#x660E;&#x5C6C;&#x6027;&#x5F8C;&#x63D0;&#x4F9B;&#x81EA;&#x5B9A;&#x7FA9; getter&#xFF0C;&#x56E0;&#x70BA;&#x62BD;&#x8C61;&#x5C6C;&#x6027;&#x4E0D;&#x5305;&#x542B;&#x96B1;&#x85CF;&#x6210;&#x54E1;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>field</code><pre><code class="lang-kotlin">interface OnTouchListener {
+  <span class="hljs-variable"><span class="hljs-keyword">var</span> target</span>:View
+  <span class="hljs-variable"><span class="hljs-keyword">val</span> description</span>:String
+      <span class="hljs-keyword">get</span>() = <span class="hljs-string">&quot;a touch listener&quot;</span>
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Kotlin &#x4E00;&#x500B;&#x985E;&#x5225;&#x53EF;&#x4EE5;&#x5BE6;&#x73FE;&#x591A;&#x500B;&#x4ECB;&#x9762; (&#x4E5F;&#x548C; Java &#x4E00;&#x6A23;)</p>
+</blockquote>
+<h2 id="&#x5BE6;&#x73FE;&#x885D;&#x7A81;">&#x5BE6;&#x73FE;&#x885D;&#x7A81;</h2>
+<p>&#x7576;&#x4E00;&#x500B;&#x985E;&#x5225;&#x5BE6;&#x73FE;&#x7684;&#x591A;&#x500B;&#x4ECB;&#x9762;&#x6709;&#x5BE6;&#x73FE;&#x76F8;&#x540C;&#x547D;&#x540D;&#x7684;&#x65B9;&#x6CD5;
+<strong>&#x5B50;&#x985E;&#x5225;&#x5FC5;&#x9808;&#x5BE6;&#x73FE;&#x8A72;&#x65B9;&#x6CD5;</strong>
+&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>super&lt;&#x7236;&#x985E;&#x5225;&#x578B;&#x5225;&gt;.&#x65B9;&#x6CD5;()</code> &#x5728;&#x5BE6;&#x73FE;&#x65B9;&#x6CD5;&#x7684;&#x5340;&#x584A;&#x5167;&#x5206;&#x5225;&#x547C;&#x53EB;&#x4E0D;&#x540C;&#x8986;&#x985E;&#x5225;&#x7684;&#x8A72;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-kotlin">interface A {
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">call</span><span class="hljs-params">()</span> {</span>
+        println(<span class="hljs-string">&quot;call in A&quot;</span>)
+    }
+}
+
+interface B {
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">call</span><span class="hljs-params">()</span> {</span>
+        println(<span class="hljs-string">&quot;call in B&quot;</span>)
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Concrete</span> : <span class="hljs-type">A</span>, <span class="hljs-type">B {</span></span>
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">call</span><span class="hljs-params">()</span> {</span>
+        super<span class="hljs-type">&lt;A&gt;</span>.call()
+        super<span class="hljs-type">&lt;B&gt;</span>.call()
+        println(<span class="hljs-string">&quot;call in Concrete&quot;</span>)
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> con</span> = Concrete()
+    con.call()
+    <span class="hljs-comment">/**
+    call in A
+    call in B
+    call in Concrete
+    */</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CLASS.html" class="navigation navigation-prev " aria-label="Previous page: 深入類別">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PACKAGE.html" class="navigation navigation-next " aria-label="Next page: 套件與存取修飾子">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"繼承、抽象、介面","level":"1.9","depth":1,"next":{"title":"套件與存取修飾子","level":"1.10","depth":1,"path":"PACKAGE.md","ref":"PACKAGE.md","articles":[]},"previous":{"title":"深入類別","level":"1.8","depth":1,"path":"CLASS.md","ref":"CLASS.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Matthew","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin 學習筆記","gitbook":"3.2.3","description":"CSO Kotlin 研究報告"},"file":{"path":"IMPLEMENT.md","mtime":"2021-11-12T06:21:38.849Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-12T06:30:59.738Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

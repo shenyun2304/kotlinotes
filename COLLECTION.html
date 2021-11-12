@@ -1,0 +1,743 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>集合 · Kotlin 學習筆記</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Matthew">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="METHOD.html" />
+    
+    
+    <link rel="prev" href="CONTROL_FLOW.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="BASIC.html">
+            
+                <a href="BASIC.html">
+            
+                    
+                    入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="OPERATOR.html">
+            
+                <a href="OPERATOR.html">
+            
+                    
+                    操作子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CONTROL_FLOW.html">
+            
+                <a href="CONTROL_FLOW.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="COLLECTION.html">
+            
+                <a href="COLLECTION.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="METHOD.html">
+            
+                <a href="METHOD.html">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="TYPE_AND_OBJECT.html">
+            
+                <a href="TYPE_AND_OBJECT.html">
+            
+                    
+                    物件與類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="CLASS.html">
+            
+                <a href="CLASS.html">
+            
+                    
+                    深入類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="IMPLEMENT.html">
+            
+                <a href="IMPLEMENT.html">
+            
+                    
+                    繼承、抽象、介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="PACKAGE.html">
+            
+                <a href="PACKAGE.html">
+            
+                    
+                    套件與存取修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="DEMO.html">
+            
+                <a href="DEMO.html">
+            
+                    
+                    程式示範
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="GENERIC.html">
+            
+                <a href="GENERIC.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="EXTENSION_DELEGATE.html">
+            
+                <a href="EXTENSION_DELEGATE.html">
+            
+                    
+                    擴展與代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="DIVE_INTO_FUNCTION.html">
+            
+                <a href="DIVE_INTO_FUNCTION.html">
+            
+                    
+                    深入方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="EXCEPTION.html">
+            
+                <a href="EXCEPTION.html">
+            
+                    
+                    例外處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="DSL.html">
+            
+                <a href="DSL.html">
+            
+                    
+                    DSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >集合</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9663;&#x5217;-array">&#x9663;&#x5217; (Array)</h1>
+<p>kotlin &#x4E2D;&#x9663;&#x5217;&#x5206;&#x70BA;&#x5169;&#x7A2E;&#xFF0C;&#x4E00;&#x7A2E;&#x662F;</p>
+<ul>
+<li><strong>&#x985E;&#x578B;&#x5143;&#x7D20;&#x9663;&#x5217;</strong> : &#x9663;&#x5217;&#x5167;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x53C3;&#x8003;&#x985E;&#x578B;&#x7684;&#x7269;&#x4EF6;</li>
+<li><strong>&#x57FA;&#x790E;&#x985E;&#x578B;&#x5143;&#x7D20;&#x9663;&#x5217;</strong> : &#x9663;&#x5217;&#x5167;&#x5143;&#x7D20;&#x7686;&#x70BA;&#x57FA;&#x790E;&#x578B;&#x5225;&#x7269;&#x4EF6;</li>
+</ul>
+<h2 id="1-&#x985E;&#x578B;&#x5143;&#x7D20;&#x9663;&#x5217;">1. &#x985E;&#x578B;&#x5143;&#x7D20;&#x9663;&#x5217;</h2>
+<ul>
+<li>&#x5143;&#x7D20;&#x53EF;&#x7A7A; : <code>arrayOfNulls&lt;&#x985E;&#x578B;&gt;(&#x9577;&#x5EA6;)</code>
+ <code>arrayOfNulls&lt;Int&gt;(3)</code> -&gt; <code>[0,0,0]</code></li>
+<li>&#x5BA3;&#x544A;&#x4E26;&#x521D;&#x59CB;&#x5316;&#x9663;&#x5217; : <code>arrayOf&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code>
+<code>arrayOf&lt;Int&gt;(1,2,3)</code> -&gt; <code>[1,2,3]</code></li>
+<li>&#x9663;&#x5217;&#x5EFA;&#x69CB;&#x5F0F; : <code>Array&lt;&#x985E;&#x578B;&gt;(&#x9577;&#x5EA6;) { it(&#x5143;&#x7D20;&#x7D22;&#x5F15;) }</code>
+<code>Array&lt;Int&gt;(3) { it + 1 }</code> -&gt; <code>[1,2,3]</code></li>
+<li>&#x8907;&#x5408;&#x985E;&#x578B;&#x5143;&#x7D20; : <code>arrayOf(&#x5143;&#x7D20;)</code>
+<code>arrayOf(1, &quot;hello&quot;, true)</code> : &#x9663;&#x5217;&#x5143;&#x7D20;&#x985E;&#x578B;&#x6703;&#x4EE5; <code>Any</code> &#x4F86;&#x7F6E;&#x5165;</li>
+</ul>
+<h2 id="2-&#x57FA;&#x672C;&#x985E;&#x578B;&#x5143;&#x7D20;&#x9663;&#x5217;">2. &#x57FA;&#x672C;&#x985E;&#x578B;&#x5143;&#x7D20;&#x9663;&#x5217;</h2>
+<p>&#x57FA;&#x672C;&#x985E;&#x578B;&#x9663;&#x5217;&#x5BA3;&#x544A;&#x6709;&#x5404;&#x81EA;&#x5C0D;&#x61C9;&#x7684;&#x5275;&#x5EFA;&#x65B9;&#x6CD5; :</p>
+<ul>
+<li>IntArray</li>
+<li>LongArray</li>
+<li>FloatArray</li>
+<li>DoubleArray</li>
+<li>BooleanArray</li>
+<li>ShortArray</li>
+<li>ByteArray</li>
+<li>CharArray</li>
+</ul>
+<h3 id="&#x5275;&#x5EFA;&#x65B9;&#x5F0F;">&#x5275;&#x5EFA;&#x65B9;&#x5F0F;</h3>
+<ul>
+<li>&#x6307;&#x521D;&#x59CB;&#x5316;&#x9577;&#x5EA6; : <code>&#x9663;&#x5217;&#x65B9;&#x6CD5;(&#x9577;&#x5EA6;)</code>
+<code>IntArray(3)</code> -&gt; <code>[0,0,0]</code></li>
+<li>&#x9663;&#x5217;&#x5EFA;&#x69CB;&#x5F0F; : <code>&#x9663;&#x5217;&#x65B9;&#x6CD5;(&#x9577;&#x5EA6;){ it(&#x5143;&#x7D20;&#x7D22;&#x5F15;) }</code>
+<code>IntArray(3) { it }</code> -&gt; <code>[0,1,2]</code></li>
+<li>&#x5BA3;&#x544A;&#x4E26;&#x521D;&#x59CB;&#x5316;&#x9663;&#x5217; : kotlin &#x5167;&#x5EFA;&#x57FA;&#x672C;&#x985E;&#x578B;&#x9663;&#x5217;&#x65B9;&#x4FBF;&#x5275;&#x5EFA;&#x7684;&#x65B9;&#x6CD5;<ul>
+<li><code>intArrayOf(&#x5143;&#x7D20;)</code> -&gt; <code>intArrayOf(1,2,3)</code> -&gt; <code>[1,2,3]</code></li>
+<li><code>charArrayOf(&#x5143;&#x7D20;)</code> -&gt; <code>charArrayOf(&apos;h&apos;,&apos;e&apos;,&apos;l&apos;,&apos;l&apos;,&apos;o&apos;)</code> -&gt; <code>[&apos;h&apos;,&apos;e&apos;,&apos;l&apos;,&apos;l&apos;,&apos;o&apos;]</code></li>
+<li>&#x5176;&#x4ED6;&#x985E;&#x578B;&#x4EE5;&#x6B64;&#x985E;&#x63A8; : <code>longArrayOf</code>&#x3001;<code>shortArrayOf</code>&#x3001;<code>byteArrayOf</code>&#x3001;<code>doubleArrayOf</code>&#x3001;<code>floatArrayOf</code>&#x3001;<code>booleanArrayOf</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x5167;&#x5EFA;&#x5C6C;&#x6027;">&#x5167;&#x5EFA;&#x5C6C;&#x6027;</h2>
+<ul>
+<li>&#x53EF;&#x7528;&#x65BC; <code>for-in</code> &#x5BA3;&#x544A;&#x4F86;&#x8F2A;&#x5DE1;&#x5143;&#x7D20;</li>
+<li>&#x5167;&#x5EFA; <code>indices</code> &#x5C6C;&#x6027;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x8F2A;&#x5DE1;&#x7D22;&#x5F15;&#x503C;</li>
+<li><p>&#x5167;&#x5EFA; <code>withIndex()</code> &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8F2A;&#x5DE1;&#x5143;&#x7D20;(value)+&#x7D22;&#x5F15;&#x503C;(index)&#x7684;&#x6578;&#x7D44;(tuple)</p>
+<p>&#x7BC4;&#x4F8B;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> array</span> = intArrayOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
+<span class="hljs-keyword">for</span> (tuple <span class="hljs-keyword">in</span> array.withIndex()) {
+  println(<span class="hljs-string">&quot;array[${tuple.index}] = ${tuple.value}&quot;</span>)
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<h1 id="&#x5217;&#x8868;-list">&#x5217;&#x8868; (List)</h1>
+<p><strong>&#x5217;&#x8868;&#x548C;&#x9663;&#x5217;&#x6700;&#x5927;&#x7684;&#x5DEE;&#x5225;&#x662F;&#x5217;&#x8868;&#x9577;&#x5EA6;&#x662F;&#x53EF;&#x8B8A;&#x52D5;&#x7684;&#xFF0C;&#x800C;&#x9663;&#x5217;&#x4E0D;&#x884C;&#x3002;</strong></p>
+<p>kotlin &#x4E2D;&#x7684;&#x5217;&#x8868;&#x5206;&#x70BA;&#x552F;&#x8B80;&#x548C;&#x53EF;&#x8B8A;&#x5169;&#x7A2E;&#xFF0C;&#x552F;&#x8B80;&#x5217;&#x8868;&#x5728;&#x5275;&#x5EFA;&#x5F8C;&#x5C31;&#x53EA;&#x80FD;&#x88AB;&#x8B80;&#x53D6;&#xFF0C;&#x4E0D;&#x80FD;&#x505A;&#x4EFB;&#x4F55;&#x8ABF;&#x6574;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;&#x5275;&#x5EFA;&#x7684;&#x6642;&#x5019;&#x7D66;&#x5B9A;&#x4E86;&#x5143;&#x7D20;&#x5167;&#x5BB9;&#xFF0C;&#x5247;&#x4E0D;&#x9700;&#x8981;&#x5BA3;&#x544A;&#x5143;&#x7D20;&#x985E;&#x578B;&#xFF0C;kotlin &#x6703;&#x81EA;&#x52D5;&#x914D;&#x9069;&#x3002;</p>
+<h2 id="1-&#x552F;&#x8B80;&#x5217;&#x8868;">1. &#x552F;&#x8B80;&#x5217;&#x8868;</h2>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;&#x5143;&#x7D20; : <code>listOf&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code>
+<code>listOf(&quot;Java&quot;, &quot;Groovy&quot;, &quot;Kotlin&quot;)</code> -&gt; <code>[&quot;Java&quot;,&quot;Groovy&quot;,&quot;Kotlin&quot;]</code></li>
+<li>&#x81EA;&#x52D5;&#x6392;&#x9664;&#x7A7A;&#x5143;&#x7D20; : <code>listOfNotNull&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code>
+<code>listOfNotNull(&quot;Java&quot;, null, &quot;Kotlin&quot;)</code> -&gt; <code>[&quot;Java&quot;, &quot;Kotlin&quot;]</code></li>
+<li>&#x5217;&#x8868;&#x5EFA;&#x69CB;&#x5F0F; : <code>List&lt;&#x985E;&#x578B;&gt;(&#x9577;&#x5EA6;) { it(&#x5143;&#x7D20;&#x7D22;&#x5F15;) }</code>
+<code>List(3) { &apos;a&apos; + it }</code> -&gt; <code>[&apos;a&apos;,&apos;b&apos;,&apos;c&apos;]</code></li>
+</ul>
+<h2 id="2-&#x53EF;&#x8B8A;&#x5217;&#x8868;">2. &#x53EF;&#x8B8A;&#x5217;&#x8868;</h2>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;&#x5143;&#x7D20; : <code>mutableListOf&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code></li>
+<li>&#x5217;&#x8868;&#x5EFA;&#x69CB;&#x5F0F; : <code>MutableList&lt;&#x985E;&#x578B;&gt;(&#x9577;&#x5EA6;) { it(&#x5143;&#x7D20;&#x7D22;&#x5F15;) }</code></li>
+</ul>
+<h3 id="&#x5E95;&#x5C64;&#x57FA;&#x65BC;-java-arraylist-&#x7684;&#x5217;&#x8868;">&#x5E95;&#x5C64;&#x57FA;&#x65BC; java ArrayList &#x7684;&#x5217;&#x8868;</h3>
+<p>kotlin &#x4E2D;&#x7684; MutableList &#x5E95;&#x5C64;&#x7684;&#x5BE6;&#x73FE;&#x53EF;&#x4EE5;&#x4F9D;&#x7167; kotlin &#x7248;&#x672C;&#x4E0D;&#x540C;&#x800C;&#x4E0D;&#x540C;&#xFF0C;&#x6700;&#x65E9;&#x7684;&#x7248;&#x672C; MutableList &#x7684;&#x5E95;&#x5C64;&#x662F;&#x7528; java &#x7684; LinkedList &#x5BE6;&#x73FE;&#xFF0C;&#x5F8C;&#x4F86;&#x624D;&#x6539;&#x6210; ArrayList&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5E0C;&#x671B;&#x56E0;&#x70BA; kotlin &#x7248;&#x672C;&#x554F;&#x984C;&#x800C;&#x9700;&#x8981;&#x660E;&#x78BA;&#x5275;&#x5EFA; java &#x7684; ArrayList &#x7D50;&#x69CB;&#xFF0C;kotlin &#x4E5F;&#x6709;&#x63D0;&#x4F9B;&#x660E;&#x78BA;&#x7684;&#x5BA3;&#x544A;&#x65B9;&#x6CD5;</p>
+<p>&#x5BA3;&#x544A;&#x65B9;&#x6CD5; : <code>arrayListOf&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code></p>
+<h2 id="&#x7A7A;&#x5217;&#x8868;">&#x7A7A;&#x5217;&#x8868;</h2>
+<p>&#x7A7A;&#x5217;&#x8868;&#x662F;<strong>&#x4E0D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x5143;&#x7D20;&#x7684;&#x552F;&#x8B80;&#x5217;&#x8868;</strong>&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x65BC;&#x9810;&#x8A2D;&#x56DE;&#x50B3;&#x503C;&#xFF0C;&#x56DE;&#x50B3;&#x6642;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x6307;&#x5B9A;&#x985E;&#x578B;</p>
+<p>&#x5BA3;&#x544A;&#x5F0F; : <code>emptyList&lt;&#x985E;&#x578B;&gt;()</code></p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getList</span><span class="hljs-params">()</span>:List<span class="hljs-type">&lt;Int&gt;</span> {</span>
+  <span class="hljs-keyword">if</span> (somecondition) {
+    <span class="hljs-keyword">return</span> listOf(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>)
+  }
+  <span class="hljs-keyword">return</span> emptyList() <span class="hljs-comment">// &lt;- &#x7121;&#x9808;&#x518D;&#x6307;&#x5B9A;&#x985E;&#x578B;</span>
+}
+</code></pre>
+<h2 id="&#x5167;&#x5EFA;&#x5C6C;&#x6027;">&#x5167;&#x5EFA;&#x5C6C;&#x6027;</h2>
+<ul>
+<li><code>size</code> : &#x53D6;&#x5F97;&#x5217;&#x8868;&#x9577;&#x5EA6;</li>
+<li><code>get(&#x7D22;&#x5F15;)</code> : &#x53D6;&#x5F97;&#x7D22;&#x5F15;&#x5143;&#x7D20;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x5B58;&#x53D6;&#x5B50; <code>[&#x7D22;&#x5F15;]</code> &#x7684;&#x65B9;&#x5F0F;</li>
+<li><code>add(&#x5143;&#x7D20;)</code> : &#x6DFB;&#x52A0;&#x5143;&#x7D20;</li>
+<li><code>set(&#x7D22;&#x5F15;, &#x5143;&#x7D20;)</code> : &#x8986;&#x84CB;&#x5217;&#x8868;&#x4E2D;&#x7D22;&#x5F15;&#x6240;&#x5728;&#x5143;&#x7D20;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x5B58;&#x53D6;&#x5B50; <code>[&#x7D22;&#x5F15;] = &#x5143;&#x7D20;</code> &#x7684;&#x65B9;&#x5F0F;</li>
+<li><code>remove(&#x5143;&#x7D20;)</code> : &#x522A;&#x9664;&#x5217;&#x8868;&#x4E2D;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x5143;&#x7D20;&#x4E0D;&#x5B58;&#x5728;&#x5247;&#x5C0D;&#x5217;&#x8868;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x5F71;&#x97FF;</li>
+<li><code>removeAt(&#x7D22;&#x5F15;)</code> : &#x522A;&#x9664;&#x5217;&#x8868;&#x4E2D;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x7D22;&#x5F15;&#x8D85;&#x904E;&#x5217;&#x8868;&#x7BC4;&#x570D;&#x5247;&#x6703;&#x62CB;&#x51FA; IndexOutOfBoundsException</li>
+<li>&#x53EF;&#x7528;&#x65BC; <code>for-in</code> &#x5BA3;&#x544A;&#x4F86;&#x8F2A;&#x5DE1;&#x5143;&#x7D20;</li>
+<li>&#x5167;&#x5EFA; <code>indices</code> &#x5C6C;&#x6027;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x8F2A;&#x5DE1;&#x7D22;&#x5F15;&#x503C;</li>
+<li>&#x5167;&#x5EFA; <code>withIndex()</code> &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8F2A;&#x5DE1;&#x5143;&#x7D20;(value)+&#x7D22;&#x5F15;&#x503C;(index)&#x7684;&#x6578;&#x7D44;(tuple)</li>
+</ul>
+<hr>
+<h1 id="&#x96C6;&#x5408;-set">&#x96C6;&#x5408; (Set)</h1>
+<ul>
+<li>&#x5143;&#x7D20;&#x4E0D;&#x53EF;&#x91CD;&#x8907;</li>
+<li>&#x5206;&#x70BA;&#x552F;&#x8B80;&#x548C;&#x53EF;&#x8B8A;&#x96C6;&#x5408;</li>
+<li>&#x552F;&#x8B80;&#x96C6;&#x5408;&#x5BA3;&#x544A; : <code>setOf&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code>&#xFF0C;&#x540C;&#x5217;&#x8868;&#x4EE5;&#x6B64;&#x985E;&#x63A8;</li>
+<li>&#x53EF;&#x8B8A;&#x96C6;&#x5408;&#x5BA3;&#x544A; : <code>mutableSetOf&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code>&#xFF0C;&#x540C;&#x5217;&#x8868;&#x4EE5;&#x6B64;&#x985E;&#x63A8;</li>
+<li>&#x5E95;&#x5C64;&#x57FA;&#x65BC; java HashSet &#x7684;&#x96C6;&#x5408; : <code>hashSetOf&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code>&#xFF0C;kotlin &#x5E95;&#x5C64;&#x9810;&#x8A2D;&#x4EE5; LinkedHashSet &#x5BE6;&#x73FE;</li>
+<li>&#x5E95;&#x5C64;&#x57FA;&#x65BC; java LinkedHashSet &#x7684;&#x96C6;&#x5408; : <code>linkedHashSet&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code>&#xFF0C;&#x9053;&#x7406;&#x540C;&#x4E0A;&#xFF0C;&#x4F9D;&#x7167; kotlin &#x7248;&#x672C;&#x4E0D;&#x540C;&#xFF0C;&#x9810;&#x8A2D;&#x7684; <code>setOf</code> &#x6216;&#x8005; <code>mutableSetOf</code> &#x5E95;&#x5C64;&#x5BE6;&#x73FE;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x7279;&#x5225;&#x6307;&#x5B9A;&#xFF0C;&#x53EF;&#x4EE5;&#x9019;&#x6A23;&#x4F7F;&#x7528;</li>
+<li>&#x5E95;&#x5C64;&#x57FA;&#x65BC; java treeSet &#x7684;&#x96C6;&#x5408; : <code>sortedSetOf&lt;&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code></li>
+</ul>
+<h2 id="&#x7A7A;&#x96C6;&#x5408;">&#x7A7A;&#x96C6;&#x5408;</h2>
+<p>&#x9053;&#x7406;&#x540C;&#x7A7A;&#x5217;&#x8868;</p>
+<p>&#x5BA3;&#x544A;&#x5F0F; : <code>emptySet&lt;&#x985E;&#x578B;&gt;()</code></p>
+<h2 id="&#x5167;&#x5EFA;&#x5C6C;&#x6027;">&#x5167;&#x5EFA;&#x5C6C;&#x6027;</h2>
+<ul>
+<li><code>size</code> : &#x53D6;&#x5F97;&#x96C6;&#x5408;&#x5927;&#x5C0F;</li>
+<li><code>add(&#x5143;&#x7D20;)</code> : &#x6DFB;&#x52A0;&#x5143;&#x7D20;</li>
+<li><code>remove(&#x5143;&#x7D20;)</code> : &#x522A;&#x9664;&#x5143;&#x7D20;</li>
+<li>&#x53EF;&#x7528;&#x65BC; <code>for-in</code> &#x5BA3;&#x544A;&#x4F86;&#x8F2A;&#x5DE1;&#x5143;&#x7D20;</li>
+</ul>
+<hr>
+<h1 id="&#x5340;&#x9593;-range">&#x5340;&#x9593; (Range)</h1>
+<ul>
+<li>&#x5340;&#x9593;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x662F;&#x9023;&#x7E8C;&#x7684;</li>
+<li>&#x5340;&#x9593;&#x53EA;&#x6709;&#x5132;&#x5B58;&#x8D77;&#x59CB;&#x503C;&#x548C;&#x7D50;&#x675F;&#x503C;</li>
+<li>&#x53EA;&#x6709; : IntRange&#x3001;LongRange&#x3001;CharRange &#x4E09;&#x7A2E;&#x5340;&#x9593;&#x985E;&#x578B;</li>
+<li>&#x81EA;&#x52D5;&#x914D;&#x9069;&#x5275;&#x5EFA; : <code>&#x958B;&#x59CB;&#x503C;.rangeTo(&#x7D50;&#x675F;&#x503C;)</code>
+<code>&apos;a&apos;.rangeTo(&apos;c&apos;)</code>  -&gt; <code>[&apos;a&apos;, &apos;c&apos;]</code><ul>
+<li>&#x4E0D;&#x5305;&#x542B;&#x7D50;&#x675F;&#x503C; : <code>&#x958B;&#x59CB;&#x503C;.until(&#x7D50;&#x675F;&#x503C;)</code>
+<code>&apos;a&apos;.until(&apos;c&apos;)</code> -&gt; <code>[&apos;a&apos;,&apos;c&apos;)</code></li>
+<li>&#x53CD;&#x5411;&#x5BA3;&#x544A; : <code>&#x958B;&#x59CB;&#x503C;.downTo(&#x7D50;&#x675F;&#x503C;)</code>
+<code>3.downTo(1)</code> -&gt; <code>[3,2,1]</code></li>
+</ul>
+</li>
+<li>&#x5340;&#x9593;&#x64CD;&#x4F5C;&#x7B26;&#x865F; : <code>&#x958B;&#x59CB;&#x503C;..&#x7D50;&#x675F;&#x503C;</code>
+<code>&apos;a&apos;..&apos;c&apos;</code> -&gt; <code>[&apos;a&apos;, &apos;c&apos;]</code></li>
+</ul>
+<h2 id="&#x5167;&#x5EFA;&#x5C6C;&#x6027;">&#x5167;&#x5EFA;&#x5C6C;&#x6027;</h2>
+<ul>
+<li><code>step(&#x9593;&#x9694;)</code> : &#x5340;&#x9593;&#x5143;&#x7D20;&#x9593;&#x9593;&#x9694;&#x9810;&#x8A2D;&#x70BA; 1&#xFF0C;&#x9019;&#x500B;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6539;&#x8B8A;&#x5143;&#x7D20;&#x9593;&#x9593;&#x9694;</li>
+<li><code>reversed()</code> : &#x958B;&#x59CB;&#x503C;&#x548C;&#x7D50;&#x675F;&#x503C;&#x53CD;&#x5411;</li>
+<li><code>contains(&#x5143;&#x7D20;)</code> : &#x5224;&#x65B7;&#x8A72;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5305;&#x542B;&#x65BC;&#x5340;&#x9593;&#x4E2D;</li>
+</ul>
+<hr>
+<h1 id="&#x5E8F;&#x5217;-sequence">&#x5E8F;&#x5217; (Sequence)</h1>
+<p>&#x5E8F;&#x5217;&#x662F;&#x4E00;&#x7D44;&#x5143;&#x7D20;&#x9593;&#x6709;&#x67D0;&#x7A2E;&#x95DC;&#x4FC2;&#x7684;&#x6578;&#x503C;&#x6578;&#x64DA;</p>
+<ul>
+<li>&#x57FA;&#x790E;&#x5BA3;&#x544A; : <code>sequenceOf(&#x5143;&#x7D20;)</code>
+<code>sequence(1,2,3,5)</code> -&gt; <code>1,2,3,5</code></li>
+<li>&#x5EFA;&#x69CB;&#x5F0F; : <code>generateSequcene(&#x7A2E;&#x5B50;){ it(&#x7A2E;&#x5B50;&#x6216;&#x4E0A;&#x4E00;&#x500B;&#x5143;&#x7D20;) }</code>
+&#x7BC4;&#x4F8B; : <code>[3,8,13,18]</code><pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> seq</span> = generateSequence(<span class="hljs-number">3</span>) {
+  <span class="hljs-variable"><span class="hljs-keyword">val</span> t</span> = it + <span class="hljs-number">5</span> <span class="hljs-comment">//&#x7B2C;&#x4E00;&#x500B; it &#x6703;&#x662F;&#x7A2E;&#x5B50;&#xFF0C;&#x4E4B;&#x5F8C;&#x5C31;&#x6703;&#x662F;&#x4E0A;&#x4E00;&#x500B;&#x56DE;&#x50B3;&#x503C;</span>
+  <span class="hljs-keyword">if</span> (t &gt; <span class="hljs-number">20</span>) { <span class="hljs-comment">// &#x7576;&#x8D85;&#x904E; 20 &#x56DE;&#x50B3; null&#xFF0C;sequence &#x5C31;&#x6703;&#x7D42;&#x6B62;</span>
+    <span class="hljs-literal">null</span>
+  } <span class="hljs-keyword">else</span> {
+    t
+  }
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<h1 id="&#x6620;&#x5C04;-map">&#x6620;&#x5C04; (Map)</h1>
+<p>&#x540C;&#x4E0A;&#xFF0C;kotlin &#x4E2D;&#x7684; mapping &#x4E5F;&#x5206;&#x70BA;&#x552F;&#x8B80;&#x8207;&#x53EF;&#x8B8A;&#x5169;&#x7A2E;&#x985E;&#x578B;&#xFF0C;&#x9810;&#x8A2D;&#x60C5;&#x6CC1;&#xFF0C;&#x5EFA;&#x7ACB;&#x51FA;&#x4F86;&#x7684;&#x6703;&#x662F; java.util.LinkedHashMap &#x7684;&#x7269;&#x4EF6; (&#x539F;&#x7406;&#x540C; Set)</p>
+<h2 id="1-&#x552F;&#x8B80;&#x6620;&#x5C04;">1. &#x552F;&#x8B80;&#x6620;&#x5C04;</h2>
+<ul>
+<li>&#x521D;&#x59CB;&#x6620;&#x5C04; : <code>mapOf&lt;key&#x985E;&#x578B;, value&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code><ul>
+<li>&#x4F7F;&#x7528; Pair &#x985E;&#x578B;&#x521D;&#x59CB; : <code>Pair(key, value)</code><pre><code class="lang-kotlin">  <span class="hljs-variable"><span class="hljs-keyword">val</span> map</span> = mapOf(Pair(<span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;Tom&quot;</span>), Pair(<span class="hljs-string">&quot;national&quot;</span>, <span class="hljs-string">&quot;USA&quot;</span>))
+</code></pre>
+</li>
+<li>&#x4F7F;&#x7528; <code>to()</code> &#x65B9;&#x6CD5;&#x521D;&#x59CB; : <code>key to value</code><pre><code class="lang-kotlin">  <span class="hljs-variable"><span class="hljs-keyword">val</span> map</span> = mapOf(<span class="hljs-string">&quot;name&quot;</span> to <span class="hljs-string">&quot;Tom&quot;</span>, <span class="hljs-string">&quot;national&quot;</span> to <span class="hljs-string">&quot;USA&quot;</span>)
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-&#x53EF;&#x8B8A;&#x6620;&#x5C04;">2. &#x53EF;&#x8B8A;&#x6620;&#x5C04;</h2>
+<ul>
+<li>&#x521D;&#x59CB;&#x6620;&#x5C04; : <code>mutableMapOf&lt;key&#x985E;&#x578B;, value&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code><ul>
+<li>&#x521D;&#x59CB;&#x65B9;&#x6CD5;&#x548C;&#x552F;&#x8B80;&#x76F8;&#x540C;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5E95;&#x5C64;&#x57FA;&#x65BC;-javautilhashmap-&#x6620;&#x5C04;">&#x5E95;&#x5C64;&#x57FA;&#x65BC; java.util.HashMap &#x6620;&#x5C04;</h3>
+<p>&#x5BA3;&#x544A;&#x65B9;&#x6CD5; : <code>hashMapOf&lt;key&#x985E;&#x578B;, value&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code></p>
+<h3 id="&#x5E95;&#x5C64;&#x57FA;&#x65BC;-javautillinkedhashmap-&#x6620;&#x5C04;">&#x5E95;&#x5C64;&#x57FA;&#x65BC; java.util.LinkedHashMap &#x6620;&#x5C04;</h3>
+<p>&#x5BA3;&#x544A;&#x65B9;&#x6CD5; : <code>linkedHashMapOf&lt;key&#x985E;&#x578B;, value&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code></p>
+<h3 id="&#x5E95;&#x5C64;&#x57FA;&#x65BC;-javautiltreemap-&#x6620;&#x5C04;">&#x5E95;&#x5C64;&#x57FA;&#x65BC; java.util.TreeMap &#x6620;&#x5C04;</h3>
+<p>&#x5BA3;&#x544A;&#x65B9;&#x6CD5; : <code>sortedMapOf&lt;key&#x985E;&#x578B;, value&#x985E;&#x578B;&gt;(&#x5143;&#x7D20;)</code></p>
+<h2 id="&#x7A7A;&#x6620;&#x5C04;">&#x7A7A;&#x6620;&#x5C04;</h2>
+<p>&#x5BA3;&#x544A;&#x65B9;&#x6CD5; : <code>emptyMap&lt;key&#x985E;&#x578B;, value&#x985E;&#x578B;&gt;()</code></p>
+<p>&#x548C;&#x6240;&#x6709;&#x7A7A;&#x96C6;&#x5408;&#x7684;&#x7A7A;&#x5BE6;&#x4F8B;&#x76F8;&#x540C;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x65BC;&#x56DE;&#x50B3;&#x6642;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x6307;&#x5B9A;&#x985E;&#x578B;</p>
+<h2 id="&#x5167;&#x5EFA;&#x5C6C;&#x6027;">&#x5167;&#x5EFA;&#x5C6C;&#x6027;</h2>
+<ul>
+<li><code>size</code> : &#x53D6;&#x5F97;&#x6620;&#x5C04;&#x5143;&#x7D20;&#x500B;&#x6578;</li>
+<li><code>get(key)</code> : &#x53D6;&#x5F97; key &#x5C0D;&#x61C9;&#x7684; value &#x503C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x5B58;&#x53D6;&#x5B50; <code>[key]</code> &#x4F86;&#x53D6;&#x5F97;<ul>
+<li>&#x5982;&#x679C; key &#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5247;&#x6703;&#x8FD4;&#x56DE;&#x7A7A;&#x503C;</li>
+<li><code>getValue(key)</code> :  key &#x4E0D;&#x5B58;&#x5728;&#x6703;&#x62CB;&#x51FA;&#x4F8B;&#x5916;&#x800C;&#x4E0D;&#x662F;&#x8FD4;&#x56DE;&#x7A7A;&#x503C;</li>
+<li><code>getOrDefault(key, default value)</code> : key &#x5B58;&#x5728;&#x56DE;&#x50B3; value &#x503C;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x56DE;&#x50B3;&#x9810;&#x8A2D;</li>
+</ul>
+</li>
+<li><code>put(key, value)</code> : &#x6DFB;&#x52A0;&#x6216;&#x4FEE;&#x6539; key &#x5C0D;&#x61C9;&#x7684; value &#x503C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x64CD;&#x4F5C;&#x5B50; <code>[key] = value</code> &#x4F86;&#x57F7;&#x884C;<ul>
+<li><code>putIfAbsent(key, value)</code> : &#x5982;&#x679C; key &#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5247;&#x6703;&#x6DFB;&#x52A0;&#xFF1B;&#x5982;&#x679C;&#x5DF2;&#x7D93;&#x5B58;&#x5728;&#xFF0C;&#x5247;&#x4E0D;&#x6703;&#x4FEE;&#x6539;</li>
+</ul>
+</li>
+<li><code>remove(key)</code> : &#x522A;&#x9664; key &#x8207;&#x5C0D;&#x61C9;&#x7684; value</li>
+<li>&#x53EF;&#x7528;&#x65BC; <code>for-in</code> &#x5BA3;&#x544A;&#x4F86;&#x8F2A;&#x5DE1;&#x5143;&#x7D20;<ul>
+<li>Entry &#x8F2A;&#x5DE1; : <code>for (entry in map) { println(&quot;${entry.key}:${entry.value}&quot;) }</code></li>
+<li>&#x89E3;&#x69CB;&#x8A9E;&#x6CD5;&#x8F2A;&#x5DE1;  : <code>for ((k, v) in map) { println(&quot;$k:$v&quot;) }</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="&#x96C6;&#x5408;&#x985E;&#x578B;&#x95DC;&#x4FC2;&#x5716;">&#x96C6;&#x5408;&#x985E;&#x578B;&#x95DC;&#x4FC2;&#x5716;</h1>
+<p><a href="https://mermaid.live/view/#eyJjb2RlIjoiY2xhc3NEaWFncmFtXG5jbGFzcyBDb2xsZWN0aW9ue1xuICBJbnQgc2l6ZVxuICBpc0VtcHR5KCkgQm9vbGVhblxuICBjb250YWlucyhlbGVtZW50KSBCb29sZWFuXG4gIGNvbnRhaW5zQWxsKGVsZW1lbnRzKSBCb29sZWFuXG4gIGl0ZXJhdG9yKCkgSXRlcmF0b3Jcbn1cbjw8aW50ZXJmYWNlPj4gQ29sbGVjdGlvblxuY2xhc3MgTGlzdFxuPDxpbnRlcmZhY2U-PiBMaXN0XG5jbGFzcyBNdXRhYmxlTGlzdFxuPDxpbnRlcmZhY2U-PiBNdXRhYmxlTGlzdFxuY2xhc3MgQXJyYXlMaXN0XG5jbGFzcyBTZXRcbjw8aW50ZXJmYWNlPj4gU2V0XG5jbGFzcyBNdXRhYmxlU2V0XG48PGludGVyZmFjZT4-IE11dGFibGVTZXRcbmNsYXNzIEhhc2hTZXRcbmNsYXNzIExpbmtlZEhhc2hTZXRcbmNsYXNzIE11dGFibGVDb2xsZWN0aW9ue1xuICBpdGVyYXRvcigpIE11dGFibGVJdGVyYXRvclxuICBhZGQoZWxlbWVudCkgQm9vbGVhblxuICBhZGRBbGwoZWxlbWVudHMpIEJvb2xlYW5cbiAgcmVtb3ZlKGVsZW1lbnQpIEJvb2xlYW5cbiAgcmVtb3ZlQWxsKGVsZW1lbnRzKSBCb29sZWFuXG4gIHJldGFpbkFsbChlbGVtZW50cykgQm9vbGVhblxuICBjbGVhcigpIFVuaXRcbn1cbjw8aW50ZXJmYWNlPj4gTXV0YWJsZUNvbGxlY3Rpb25cbkNvbGxlY3Rpb24gPHwtLSBMaXN0XG5MaXN0IDx8LS0gTXV0YWJsZUxpc3Rcbk11dGFibGVMaXN0IDx8Li4gQXJyYXlMaXN0XG5Db2xsZWN0aW9uIDx8LS0gU2V0XG5TZXQgPHwtLSBNdXRhYmxlU2V0XG5NdXRhYmxlU2V0IDx8Li4gSGFzaFNldFxuSGFzaFNldCA8fC0tIExpbmtlZEhhc2hTZXRcbkNvbGxlY3Rpb24gPHwtLSBNdXRhYmxlQ29sbGVjdGlvblxuTXV0YWJsZUNvbGxlY3Rpb24gPHwtLSBNdXRhYmxlTGlzdFxuTXV0YWJsZUNvbGxlY3Rpb24gPHwtLSBNdXRhYmxlU2V0IiwibWVybWFpZCI6IntcbiAgXCJ0aGVtZVwiOiBcImRhcmtcIlxufSIsInVwZGF0ZUVkaXRvciI6dHJ1ZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOnRydWV9" target="_blank">&#x770B;&#x4E0D;&#x5230;&#x5716;&#x8ACB;&#x9EDE;</a></p>
+<pre><code class="lang-mermaid">classDiagram
+class Collection{
+  Int size
+  isEmpty() Boolean
+  contains(element) Boolean
+  containsAll(elements) Boolean
+  iterator() Iterator
+}
+&lt;&lt;interface&gt;&gt; Collection
+class List
+&lt;&lt;interface&gt;&gt; List
+class MutableList
+&lt;&lt;interface&gt;&gt; MutableList
+class ArrayList
+class Set
+&lt;&lt;interface&gt;&gt; Set
+class MutableSet
+&lt;&lt;interface&gt;&gt; MutableSet
+class HashSet
+class LinkedHashSet
+class MutableCollection{
+  iterator() MutableIterator
+  add(element) Boolean
+  addAll(elements) Boolean
+  remove(element) Boolean
+  removeAll(elements) Boolean
+  retainAll(elements) Boolean
+  clear() Unit
+}
+&lt;&lt;interface&gt;&gt; MutableCollection
+Collection &lt;|-- List
+List &lt;|-- MutableList
+MutableList &lt;|.. ArrayList
+Collection &lt;|-- Set
+Set &lt;|-- MutableSet
+MutableSet &lt;|.. HashSet
+HashSet &lt;|-- LinkedHashSet
+Collection &lt;|-- MutableCollection
+MutableCollection &lt;|-- MutableList
+MutableCollection &lt;|-- MutableSet
+</code></pre>
+<h1 id="&#x96C6;&#x5408;&#x985E;&#x578B;&#x8868;">&#x96C6;&#x5408;&#x985E;&#x578B;&#x8868;</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x985E;&#x5225;</th>
+<th style="text-align:left">&#x53EF;&#x8B8A;</th>
+<th style="text-align:left">&#x5143;&#x7D20;&#x53EF;&#x91CD;&#x8907;</th>
+<th style="text-align:left">&#x7D22;&#x5F15;&#x5B58;&#x53D6;</th>
+<th style="text-align:left">&#x52D5;&#x614B;&#x8F09;&#x5165;</th>
+<th style="text-align:left">&#x5E95;&#x5C64;&#x5BE6;&#x73FE;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">List&lt;&gt;</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">java.util.Arrays$ArrayList</td>
+</tr>
+<tr>
+<td style="text-align:left">MutableList&lt;&gt;</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">java.util.ArrayList</td>
+</tr>
+<tr>
+<td style="text-align:left">Set&lt;&gt;</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">java.util.LinkedHashSet</td>
+</tr>
+<tr>
+<td style="text-align:left">MutableSet&lt;&gt;</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">java.util.LinkedhashSet</td>
+</tr>
+<tr>
+<td style="text-align:left">Range</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Kotlin &#x539F;&#x751F;&#x985E;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:left">Sequence</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Kotlin &#x539F;&#x751F;&#x985E;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CONTROL_FLOW.html" class="navigation navigation-prev " aria-label="Previous page: 流程控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="METHOD.html" class="navigation navigation-next " aria-label="Next page: 方法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"集合","level":"1.5","depth":1,"next":{"title":"方法","level":"1.6","depth":1,"path":"METHOD.md","ref":"METHOD.md","articles":[]},"previous":{"title":"流程控制","level":"1.4","depth":1,"path":"CONTROL_FLOW.md","ref":"CONTROL_FLOW.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Matthew","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kotlin 學習筆記","gitbook":"3.2.3","description":"CSO Kotlin 研究報告"},"file":{"path":"COLLECTION.md","mtime":"2021-11-12T06:25:53.139Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-12T06:30:59.738Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

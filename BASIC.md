@@ -4,10 +4,21 @@
 
 ---
 
-# 語法
+# 段落語法
 
 - 預設不需要 `;` 做結尾，除非將多行程式寫在同一行
-- `main` 方法為程式進入點，預設為含參數方法 `main(args:ArrayList<String>)`，如果不需要處理指令參數則也可以省略參數宣告，如 `main()`
+- `main` 方法為程式進入點，預設為含參數方法 
+  ```kotlin
+  fun main(args:ArrayList<String>)
+  ```
+  類似 java 的 
+  ```java
+  public static void main(String[] args)
+  ```
+  如果不需要處理指令參數則也可以省略參數宣告，像是 
+  ```kotlin
+  fun main()
+  ```
 - Kotlinc 編譯原則是將檔名當成一個 class，所有在原始碼中宣告的類別都是此類別的內部類別，預設 class 名稱是`檔名+Kt`，如 `HelloWorld.kt` -> `HelloWorldKt.class`
 
 ---
@@ -18,11 +29,20 @@
 - `var` : 表示此變數為可異動變數
 - `val` : 表示此變數為不可異動變數 (常數)
 
+kotlin
 ```kotlin
 val DEPARTMENT = "CSO"
 DEPARTMENT = "PDT" // <-- error
 var version:String = ""
 version = "v3"
+```
+
+java
+```java
+final String DEPARTMENT = "CSO";
+DEPARTMENT = "PDT"; // <-- error
+String version = "";
+version = "v3";
 ```
 
 ---
@@ -37,6 +57,7 @@ version = "v3"
 `Int`、`Long`、`Short` 長度分別為 32 、64、16 位元
 
 > 長整數的宣告只允許使用大寫 `L`
+> java 中 `1l` 或 `1L` 都可以
 
 ### 位元組
 
@@ -82,9 +103,9 @@ version = "v3"
 
 ---
 
-# 空值
+# 空值 (null)
 
-所有變數預設**不可為空!!!**
+所有變數預設 **不可為空!!!**
 
 ### 空值宣告
 
@@ -94,15 +115,13 @@ version = "v3"
 
 在變數宣告的型別後方加上問號 `?` 來表示此變數可能為空值
 
-編譯器對可不可空變數的處理不同，編譯器對於不同狀態的變數有不同的處理方式
+雖然像是在標註變數的狀態，但是編譯器對可空變數的型別和原始型別判定為 **不同**
 
-在編譯期就可以比較安全的撰寫程式
-
-同一個型別可不可空是兩種不同的狀態，即 : `String?` 與 `String` 是不同的
+即 : `String?` 與 `String` 是不同的
 
 ##### 安全操作
 
-###### 阻擋呼叫
+擋呼叫
 
 呼叫可空狀態的變數時，如果該變數真的是空值，則不會繼續往下呼叫，避免噴出 NullPointerException
 
@@ -111,7 +130,7 @@ var nullString:String?
 println(nullString?.length) // <-- 不會真的去呼叫 length : 不會噴錯
 ```
 
-###### 阻擋賦值
+阻擋賦值
 
 可空變數不可賦值給非空變數，編譯器會直接報錯，就算該可空變數不為空
 
@@ -121,17 +140,46 @@ var s:String = nullString // <-- error
 var l:Int = nullString?.length // <-- error
 ```
 
-###### 強制非空
+非空才做
+
+可空變數都有 `let` 方法，此方法內容會在該變數非空的時候執行，並且將該值賦予給隱藏變數 `it`
+
+```kotlin
+var maybeNull:String? = "i am real"
+maybeNull?.let {
+  println("$it") // it 型別為 String
+}
+```
+
+> 簡化了 if null 的判斷
+
+注意如果在使用 `let` 的時候沒有用非空判斷 `?`，那在 `let` 區塊中的隱藏變數型別一樣會是 `String?`
+
+```kotlin
+maybeNull.let {
+  println("$it") // it 型別為 String?
+}
+```
+
+類似處理可空變數的方法
+
+- `run`
+- `with`
+- `T.run`
+- `let`
+- `also`
+- `apply`
+
+強制非空
 
 要將可空變數強制當作非空存取，可以使用 `!!` 符號
-
-> 設計上盡量避免這樣使用
 
 ```kotlin
 var nullString:String? = "123"
 var s:String = nullString!! // <-- it's ok, but not recommand
 ```
 
+> 設計上盡量避免這樣使用
 ---
 
 # 最大父類別
@@ -149,8 +197,6 @@ var s:String = nullString!! // <-- it's ok, but not recommand
 `Nothing`
 
 和 `Any` 相反，是所有類別的子類別
-
-> 就算你不想要，他一定是你的子類別
 
 ---
 
@@ -171,7 +217,7 @@ var b:Byte = 1
 var i:Int = b // <-- error
 ```
 
-### 運算會自動想上轉型
+### 運算會自動向上轉型
 
 ```kotlin
 var i:Int = 100
