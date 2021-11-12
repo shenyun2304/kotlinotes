@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "ebook-convert": "^2.0.1",
-    "graceful-fs": "^4.2.8"
-  }
-}
