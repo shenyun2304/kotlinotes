@@ -109,7 +109,9 @@ var c = a.unaryMinus() // c = -10
 
 關鍵字 : `?:`
 
-當第一個目標為空值時，返回第二個目標
+當第一個目標為空值時，**執行** 第二個目標
+
+第二個目標可以是回傳值，也可以是一段可執行程式
 
 語法 : 第一目標 `?:` 第二目標
 
@@ -136,8 +138,8 @@ var c = a.unaryMinus() // c = -10
 符號 `..` 可以創建區間物件，相當於第一個目標呼叫 `rangeTo()` 方法
 
 ```kotlin
-var range = 1..3
-var range2 = 1.rangTo(3)
+var range = 1..3 // [1,2,3]
+var range2 = 1.rangTo(3) // [1,2,3]
 ```
 
 ---
@@ -153,13 +155,13 @@ class Blue {
 	operator fun plus(y: Yellow):Green = Green()
 }
 class Yellow {
-	operator fun plus(b:Blue):Blue = Blue()
+	operator fun plus(b:Blue):Green = Green()
 }
 class Green
 
 fun main() {
 	val blue:Blue = Blue()
 	val yellow:Yellow = Yellow()
-	val green = blue + yellow
+	val green = blue + yellow // Green 型別物件
 }
 ```
